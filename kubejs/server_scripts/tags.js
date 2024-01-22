@@ -7,12 +7,37 @@ ServerEvents.tags('item', e => {
     e.add('forge:storage_blocks/cheese', 'brewinandchewin:flaxen_cheese_wheel')
     e.add('forge:storage_blocks/nether_cheese', 'brewinandchewin:scarlet_cheese_wheel')
     e.add('curios:body', /aether:.*cape.*/)
+    e.add('forge:plates', [
+        'createdeco:zinc_sheet',
+    ])
+    e.add('forge:plates/zinc', 'createdeco:zinc_sheet',)
+
+    e.remove('minecraft:copper_ores', [
+        'ad_astra:mars_diamond_ore',
+        'ad_astra:venus_diamond_ore'
+    ])
+    e.add('minecraft:diamond_ores', [
+        'ad_astra:mars_diamond_ore',
+        'ad_astra:venus_diamond_ore'
+    ])
 
     e.remove('c:iron_ingots', 'betternether:cincinnasite_ingot')
     e.add('forge:ores/redstone', 'betternether:nether_redstone_ore')
 
     e.add('forge:boxes/shulker', global.ironShulkerBoxes)
     e.add('minecraft:shulker_boxes', global.ironShulkerBoxes)
+
+    // origins
+    let caveDwarfFoods = [
+        'galosphere:lichen_cordyceps',
+        'galosphere:golden_lichen_cordyceps',
+        'galosphere:salted_jerky',
+        'galosphere:preserved_flesh',
+    ]
+    Ingredient.of('@miners_delight').itemIds.forEach(item => {
+        if (Item.of(item).isEdible()) caveDwarfFoods.push(item)
+    })
+    e.add('kubejs:cave_dwarf_foods', caveDwarfFoods)
 
 })
 
@@ -34,11 +59,14 @@ ServerEvents.tags('block', e => {
 })
 
 ServerEvents.tags('fluid', e => {
+    e.removeAllTagsFrom('embers:molten_bronze')
+    e.removeAllTagsFrom('cofh_core:honey')
     e.add('forge:molten_zinc', 'kubejs:molten_zinc')
     e.add('forge:molten_brass', 'kubejs:molten_brass')
     e.add('embers:ingot_tooltip', [
         'kubejs:molten_zinc',
-        'kubejs:molten_brass'
+        'kubejs:molten_brass',
+        'createbigcannons:molten_bronze'
     ])
 })
 
@@ -207,10 +235,10 @@ ServerEvents.tags('entity_type', e => {
         'eidolon:raven',
         'eidolon:slimy_slug',
         'endertrigon:baby_ender_dragon',
-        'enlightened_end:bouncer',
-        'enlightened_end:floating_elevibloom',
-        'enlightened_end:radiator',
-        'enlightened_end:ringling',
+        // 'enlightened_end:bouncer',
+        // 'enlightened_end:floating_elevibloom',
+        // 'enlightened_end:radiator',
+        // 'enlightened_end:ringling',
         'galosphere:spectre',
         'galosphere:sparkle',
         'galosphere:specterpillar',
@@ -227,20 +255,20 @@ ServerEvents.tags('entity_type', e => {
         'rats:ratfish',
         'rats:tamed_rat',
         'snuffles:snuffle',
-        'twilightforest:bighorn_sheep',
-        'twilightforest:boar',
-        'twilightforest:carminite_ghastling',
-        'twilightforest:deer',
-        'twilightforest:dwarf_rabbit',
-        'twilightforest:helmet_crab',
-        'twilightforest:kobold',
-        'twilightforest:maze_slime',
-        'twilightforest:penguin',
-        'twilightforest:raven',
-        'twilightforest:squirrel',
-        'twilightforest:swarm_spider',
-        'twilightforest:tiny_bird',
-        'twilightforest:towerwood_borer',
+        // 'twilightforest:bighorn_sheep',
+        // 'twilightforest:boar',
+        // 'twilightforest:carminite_ghastling',
+        // 'twilightforest:deer',
+        // 'twilightforest:dwarf_rabbit',
+        // 'twilightforest:helmet_crab',
+        // 'twilightforest:kobold',
+        // 'twilightforest:maze_slime',
+        // 'twilightforest:penguin',
+        // 'twilightforest:raven',
+        // 'twilightforest:squirrel',
+        // 'twilightforest:swarm_spider',
+        // 'twilightforest:tiny_bird',
+        // 'twilightforest:towerwood_borer',
         'undergarden:gloomper',
         'undergarden:gwib',
         'undergarden:mog',

@@ -31,6 +31,8 @@
 /XaeroWaypoints*/
 /modernfix/
 /showdown/
+/moddata
+/showdown-backup/
 
 # root files
 /knownkeys.txt
@@ -47,6 +49,8 @@
 /rhino.local.properties
 /seamless.txt
 /fabricloader.log
+resourcepacks/Quark Programmer Art.zip
+emi.json
 
 # launcher-related
 /.curseclient

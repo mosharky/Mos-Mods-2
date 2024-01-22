@@ -13,3 +13,7 @@
     - [InvMove](https://modrinth.com/mod/invmove) - Move around while in inventory
     - [ItemPhysic Lite](https://modrinth.com/mod/itemphysic-lite) and [CreativeCore](https://modrinth.com/mod/creativecore) - Realistic dropped item models
     - [Continuity](https://modrinth.com/mod/continuity) - Connected textures. Was not included in the modpack due to small visual bugs
+
+
+## Noteable Keybinds
+- 

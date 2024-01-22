@@ -84,14 +84,14 @@ to make editing this file much easier.
 		"betterend:end_stone_lantern": "minecraft:lantern",
 		"betterend:blackstone_lantern": "minecraft:lantern",
 		// end stone brick
-		"betterend:end_stone_brick_weathered": "enlightened_end:cracked_end_stone_bricks",
-		"betterend:end_stone_brick_weathered_slab": "minecraft:end_stone_brick_slab",
-		"betterend:end_stone_brick_weathered_stairs": "minecraft:end_stone_brick_stairs",
-		"betterend:end_stone_brick_weathered_wall": "minecraft:end_stone_brick_wall",
-		"betterend:end_stone_brick_cracked": "enlightened_end:cracked_end_stone_bricks",
-		"betterend:end_stone_brick_cracked_slab": "minecraft:end_stone_brick_slab",
-		"betterend:end_stone_brick_cracked_stairs": "minecraft:end_stone_brick_stairs",
-		"betterend:end_stone_brick_cracked_wall": "minecraft:end_stone_brick_wall",
+		// "betterend:end_stone_brick_weathered": "enlightened_end:cracked_end_stone_bricks",
+		// "betterend:end_stone_brick_weathered_slab": "minecraft:end_stone_brick_slab",
+		// "betterend:end_stone_brick_weathered_stairs": "minecraft:end_stone_brick_stairs",
+		// "betterend:end_stone_brick_weathered_wall": "minecraft:end_stone_brick_wall",
+		// "betterend:end_stone_brick_cracked": "enlightened_end:cracked_end_stone_bricks",
+		// "betterend:end_stone_brick_cracked_slab": "minecraft:end_stone_brick_slab",
+		// "betterend:end_stone_brick_cracked_stairs": "minecraft:end_stone_brick_stairs",
+		// "betterend:end_stone_brick_cracked_wall": "minecraft:end_stone_brick_wall",
 		// shulker boxes
 		"minecraft:shulker_box": "ironshulkerbox:iron_shulker_box",
 		"minecraft:white_shulker_box": "ironshulkerbox:iron_shulker_box_white",
@@ -111,6 +111,7 @@ to make editing this file much easier.
 		"minecraft:red_shulker_box": "ironshulkerbox:iron_shulker_box_red",
 		"minecraft:black_shulker_box": "ironshulkerbox:iron_shulker_box_black",
 		// misc
-		"cataclysm:purpur_wall": "enlightened_end:purpur_wall"
+		// "cataclysm:purpur_wall": "enlightened_end:purpur_wall"
+        "iceandfire:copper_pile": "createdeco:copper_coinstack"
 	}
 }

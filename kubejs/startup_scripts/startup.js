@@ -1,8 +1,10 @@
 // priority: 1
 
-Platform.mods.kubejs.name = "Mo's Mons'"
-Platform.mods.eidolon.name = 'Eidolon'
-Platform.mods.ironshulkerbox.name = 'Minecraft'
+// rename mods
+Platform.setModName('kubejs', "Mo's Mods")
+Platform.setModName('eidolon', 'Eidolon')
+Platform.setModName('ironshulkerbox', 'Minecraft')
+Platform.getInfo('numismatic-overhaul').name = 'Numismatic Overhaul' // the hyphen fucks things up idk why
 
 // stuff that's fully removed
 global.fullRemovals = [
@@ -16,28 +18,28 @@ global.fullRemovals = [
     /betternether:(nether_lapis_ore|.*chair|.*stool|.*taburet|.*ladder|.*ruby.*|obsidian_brick.*)/,
     /handcrafted:(.*cupboard|stackable_book)/,
     'beautify:rope',
-    'kawaiidishes:roasted_cocoa_beans',
-    'kawaiidishes:dried_cocoa_beans',
-    'kawaiidishes:cocoa_powder',
-    'kawaiidishes:white_chocolate_bar',
-    'kawaiidishes:dark_chocolate_bar',
-    'kawaiidishes:milk_chocolate_bar',
-    'kawaiidishes:chocolate_cookie', 
-    'kawaiidishes:chocolate_cheese_cake', 
-    'kawaiidishes:piece_of_chocolate_cheesecake',
-    'kawaiidishes:piece_of_cheesecake',
-    'kawaiidishes:cheese_cake', 
-    'kawaiidishes:piece_of_honey_cheesecake', 
-    'kawaiidishes:honey_cheese_cake', 
-    'kawaiidishes:piece_of_cake', 
-    'kawaiidishes:sweet_berry_cookie', 
-    'kawaiidishes:honey_cookie', 
-    'kawaiidishes:golden_cookie', 
+    // 'kawaiidishes:roasted_cocoa_beans',
+    // 'kawaiidishes:dried_cocoa_beans',
+    // 'kawaiidishes:cocoa_powder',
+    // 'kawaiidishes:white_chocolate_bar',
+    // 'kawaiidishes:dark_chocolate_bar',
+    // 'kawaiidishes:milk_chocolate_bar',
+    // 'kawaiidishes:chocolate_cookie', 
+    // 'kawaiidishes:chocolate_cheese_cake', 
+    // 'kawaiidishes:piece_of_chocolate_cheesecake',
+    // 'kawaiidishes:piece_of_cheesecake',
+    // 'kawaiidishes:cheese_cake', 
+    // 'kawaiidishes:piece_of_honey_cheesecake', 
+    // 'kawaiidishes:honey_cheese_cake', 
+    // 'kawaiidishes:piece_of_cake', 
+    // 'kawaiidishes:sweet_berry_cookie', 
+    // 'kawaiidishes:honey_cookie', 
+    // 'kawaiidishes:golden_cookie', 
     'farmersdelight:wheat_dough',
     'supplementaries:rope',
     /embers:(lead|silver)_(shovel|axe|pickaxe|hoe|sword)/,
     /embers:(iron|copper)_plate/,
-    /ad_astra:.*/,
+    // /ad_astra:.*/,
     /hearth_and_home:.*chimney/,
     /decorative_blocks:(thatch|stone_pillar|blockstate_copy_item)/,
     'create:calcite_pillar',
@@ -50,14 +52,24 @@ global.fullRemovals = [
     /ironshulkerbox:(?!iron).*/,
     /ironshulkerbox:.*upgrade.*/,
     /minecraft:.*shulker_box.*/,
-    /enlightened_end:(.*irradium.*|nuclear_bomb|nuclear_furnace)/,
+    // /enlightened_end:(.*irradium.*|nuclear_bomb|nuclear_furnace)/,
+    'betterend:ender_dust',
+    'overweight_farming:straw_hat',
+    'embers:molten_bronze_bucket',
+    'createaddition:zinc_sheet',
+    /createdeco:(netherite|gold)_coin.*/,
+    'embers:copper_nugget',
+    /iceandfire:(copper_nugget|armor_silver.*)/,
+    /iceandfire:silver_(sword|shovel|pickaxe|axe|hoe)/,
 ]
+
 
 // list of stuff to replace from peoples inventories
 global.inventoryReplacement = [
     { toReplace: 'iwannaskate:pizza_slice', replaceWith: 'brewinandchewin:cheese_pizza_slice', msg: false },
     { toReplace: 'hauntedharvest:rotten_apple', replaceWith: 'domesticationinnovation:rotten_apple' },
 ]
+
 
 global.colours = [
     'white',
@@ -78,6 +90,8 @@ global.colours = [
     'black'
 ]
 
+
+
 global.ironShulkerBoxes = ['ironshulkerbox:iron_shulker_box']
 global.colours.forEach(colour => global.ironShulkerBoxes.push(`ironshulkerbox:iron_shulker_box_${colour}`))
 
@@ -88,3 +102,21 @@ global.ingerland = (item) => {
 
     return `${modName}'s ${itemName}`
 }
+
+
+
+// debug
+// let tags = AlmostUnified.getTags();
+// let allItems = [];
+
+// for (let unifyTag of tags) {
+//     let items = AlmostUnified.getItemIds(unifyTag);
+//     let preferred = AlmostUnified.getPreferredItemForTag(unifyTag);
+
+//     for (let item of items) {
+//         if (item.equals(preferred.id.toString())) continue;
+//         allItems.push(item);
+//     }
+// }
+
+// console.log(allItems);

@@ -19,6 +19,8 @@ ServerEvents.recipes(e =>{
     e.replaceInput({}, 'supplementaries:rope', 'farmersdelight:rope')
     e.replaceInput({}, 'beautify:rope', 'farmersdelight:rope')
     e.replaceInput({}, 'hauntedharvest:rotten_apple', 'domesticationinnovation:rotten_apple')
+    e.replaceInput({}, 'betterend:ender_dust', 'ae2:ender_dust')
+    e.replaceInput({}, 'createaddition:zinc_sheet', 'createdeco:zinc_sheet')
 
 })
 

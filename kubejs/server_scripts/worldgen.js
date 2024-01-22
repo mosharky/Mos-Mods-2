@@ -57,54 +57,54 @@ ServerEvents.tags('worldgen/biome', e => {
 
 
 
-    e.removeAll('kawaiidishes:coffee_gen')
-    e.add('kawaiidishes:coffee_gen', [
-        '#minecraft:is_jungle',
-        '#minecraft:is_savanna',
-        '#forge:is_dry',
-        '#forge:is_dry/overworld',
-        'regions_unexplored:joshua_desert'
-    ])
+    // e.removeAll('kawaiidishes:coffee_gen')
+    // e.add('kawaiidishes:coffee_gen', [
+        // '#minecraft:is_jungle',
+        // '#minecraft:is_savanna',
+        // '#forge:is_dry',
+        // '#forge:is_dry/overworld',
+        // 'regions_unexplored:joshua_desert'
+    // ])
 
-    e.removeAll('cobblemon:has_feature/apricorns_dense')
-    e.add('cobblemon:has_feature/apricorns_dense', [
-        'minecraft:forest',
-        'minecraft:flower_forest',
-        'minecraft:birch_forest',
-        'minecraft:old_growth_birch_forest',
-        'regions_unexplored:willow_forest',
-        'regions_unexplored:autumnal_maple_forest',
-        'regions_unexplored:maple_forest',
-        'regions_unexplored:deciduous_forest',
-        'regions_unexplored:silver_birch_forest',
-    ])
+    // e.removeAll('cobblemon:has_feature/apricorns_dense')
+    // e.add('cobblemon:has_feature/apricorns_dense', [
+    //     'minecraft:forest',
+    //     'minecraft:flower_forest',
+    //     'minecraft:birch_forest',
+    //     'minecraft:old_growth_birch_forest',
+    //     'regions_unexplored:willow_forest',
+    //     'regions_unexplored:autumnal_maple_forest',
+    //     'regions_unexplored:maple_forest',
+    //     'regions_unexplored:deciduous_forest',
+    //     'regions_unexplored:silver_birch_forest',
+    // ])
 
-    e.removeAll('cobblemon:has_feature/apricorns_normal')
-    e.add('cobblemon:has_feature/apricorns_normal', [
-        'minecraft:taiga',
-        'minecraft:plains',
-        'minecraft:sunflower_plains',
-        'minecraft:meadow',
-        'minecraft:windswept_forest',
-        'minecraft:windswept_gravelly_hills',
-        'minecraft:windswept_hills',
-        'regions_unexplored:clover_plains',
-        'regions_unexplored:fen',
-        'regions_unexplored:cold_deciduous_forest',
-        'regions_unexplored:orchard',
-        'regions_unexplored:pine_taiga',
-        'regions_unexplored:temperate_grove',
-    ])
+    // e.removeAll('cobblemon:has_feature/apricorns_normal')
+    // e.add('cobblemon:has_feature/apricorns_normal', [
+    //     'minecraft:taiga',
+    //     'minecraft:plains',
+    //     'minecraft:sunflower_plains',
+    //     'minecraft:meadow',
+    //     'minecraft:windswept_forest',
+    //     'minecraft:windswept_gravelly_hills',
+    //     'minecraft:windswept_hills',
+    //     'regions_unexplored:clover_plains',
+    //     'regions_unexplored:fen',
+    //     'regions_unexplored:cold_deciduous_forest',
+    //     'regions_unexplored:orchard',
+    //     'regions_unexplored:pine_taiga',
+    //     'regions_unexplored:temperate_grove',
+    // ])
 
-    e.removeAll('cobblemon:has_feature/apricorns_sparse')
-    e.add('cobblemon:has_feature/apricorns_sparse', [
-        'regions_unexplored:grassland',
-        'regions_unexplored:highland_fields'
-    ])
+    // e.removeAll('cobblemon:has_feature/apricorns_sparse')
+    // e.add('cobblemon:has_feature/apricorns_sparse', [
+    //     'regions_unexplored:grassland',
+    //     'regions_unexplored:highland_fields'
+    // ])
 
-    e.add('cobblemon:has_feature/revival_herbs', [
-        'regions_unexplored:ancient_delta'
-    ])
+    // e.add('cobblemon:has_feature/revival_herbs', [
+    //     'regions_unexplored:ancient_delta'
+    // ])
 
     e.removeAll('cataclysm:has_structure/soul_black_smith_biomes')
     e.add('cataclysm:has_structure/soul_black_smith_biomes', [
@@ -272,7 +272,6 @@ ServerEvents.tags('worldgen/biome', e => {
         'regions_unexplored:saguaro_desert',
     ])
 
-
 })
 
 // biome modifiers
@@ -287,7 +286,32 @@ ServerEvents.highPriorityData(e => {
         e.addJson(`${namespace}:forge/biome_modifier/${filename}.json`, { type: 'forge:none' })
     }
 
-    removeBiomeModifier('enlightened_end:irradium_ore_biome_modifier')
+
+    // gets what the filename should be from an array or string: modId_featureName
+    function fileName(name) {
+        let result
+        if (typeof name == 'object') result = name[0].split(':')[0] + '_' +  name[0].split(':')[1]
+        else result = name.split(':')[0] + '_' +  name.split(':')[1]
+        return result
+    }
+
+    /**
+     * Remove a placed feature from specified biome
+     * @param {String | Array} features - accepts a placed feature id or [list of placed feature ids]
+     * @param {String | Array} biomes - accepts a biome id, [list of biome ids], or #namespace:biome_tag 
+     * @param {String} step - OPTIONAL: the generation step. Defaults as 'any'
+     */
+    function removeFeature(features, biomes) {
+        let obj = {
+            type: 'forge:remove_features',
+            biomes: biomes,
+            features: features
+        }
+        e.addJson(`kubejs:forge/biome_modifier/remove_${fileName(features)}.json`, obj)
+    }
+
+    // removeFeature('iceandfire:silver_ore', '#minecraft:is_overworld') done through config now
+    // removeBiomeModifier('enlightened_end:irradium_ore_biome_modifier')
     removeBiomeModifier('eidolon:silver_ore')
     removeBiomeModifier('embers:add_lead_ore')
     removeBiomeModifier('embers:add_silver_ore')

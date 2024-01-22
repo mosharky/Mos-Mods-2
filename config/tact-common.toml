@@ -29,6 +29,11 @@ primitiveClubRandomExtraStunTime = 150
 # Alex's Caves replaces this story with their own. This config puts it back to normal if enabled.
 #
 restoreEndStory = false
+#----------------------------------
+#
+# If enabled, this config makes the Compendium have all biomes and their info unlocked immediately on log-in.
+#
+unlockAllCompendiumInfo = false
 
 ["Mob Attack/Health Options"]
 	#Range: 1.0 ~ 1000000.0

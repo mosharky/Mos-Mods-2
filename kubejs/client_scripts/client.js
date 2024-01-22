@@ -3,16 +3,24 @@ JEIEvents.hideItems(e => {
     e.hide([
         'ae2:facade',
         'obtrophies:trophy',
-        // /.*spawn_egg/,
-        // /eidolon:spawn.*/
+        /structure_gel.*/,
+        /everycomp:q\/.*/,
+        'embers:molten_bronze',
     ])
 
     global.inventoryReplacement.forEach(r => e.hide(r.toReplace))
 })
 
+JEIEvents.hideFluids(e => {
+    e.hide([
+        'decorative_blocks:thatch',
+        /cofh_core:.*/
+    ])
+})
+
 JEIEvents.removeCategories(e => {
     e.remove([
-        'twilightforest:uncrafting',
+        // 'twilightforest:uncrafting',
         'rats:cauldron'
     ])
 })

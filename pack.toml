@@ -1,4 +1,4 @@
-name = "Mo's Mons' SMP"
+name = "Mo's 'Mons SMP"
 author = "mosharky"
 version = "2.1.1"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "9e57a7e806adc8ee059ca5f9490299d45d2be8e2c258732cb13e9849437deea5"
+hash = "76e340a35eb16c2b0319506b72fb496dfb43988b677061196a7ca6878bdf2ca1"
 
 [versions]
 forge = "47.2.8"

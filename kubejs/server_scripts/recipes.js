@@ -25,5 +25,5 @@ ServerEvents.recipes(e => {
         count: 8,
         ingredient: Ingredient.of('brewinandchewin:unripe_flaxen_cheese_wheel').toJson(),
         result: 'rats:blue_cheese'
-    }).id('momo:chef/blue_cheese')
+    }).id('kubejs:chef/blue_cheese')
 })

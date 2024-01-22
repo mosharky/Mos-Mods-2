@@ -1,6 +1,6 @@
 # https://squidfunk.github.io/mkdocs-material/getting-started/
 # https://www.mkdocs.org/user-guide/writing-your-docs/
-site_name: Mo's Mons' Wiki
+site_name: Mo's 'Mons Wiki
 docs_dir: pages
 repo_url: https://github.com/mosharky/Mos-Mons
 repo_name: mosharky/Mos-Mons

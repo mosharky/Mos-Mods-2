@@ -17,9 +17,6 @@
 
 !!! warning
     - **The modpack will auto-install on launch, and will auto-update if there is one.**
-    - **The first launch after installing may crash. It should be 100% fine afterwards.**
-        - **If it crashes after the second launch, please DM @.mo_mo**
-        - **I'm still trying to find the cause. Sorry!**
 
 
 ***

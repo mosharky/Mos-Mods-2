@@ -80,3 +80,17 @@ ItemEvents.modification(e => {
     // e.modify('cataclysm:void_forge', item => item.attackDamage = 13)
     // e.modify('cataclysm:infernal_forge', item => item.attackDamage = 13)
 })
+
+
+// potions
+MoreJSEvents.registerPotionBrewing(e => {
+    /**
+     * 1. Argument: The ingredient of the brewing stand
+     * 2. Argument: The input potion of the brewing stand
+     * 3. Argument: The result potion of the brewing
+     */
+    
+    e.removeByPotion('minecraft:awkward', 'betterend:ender_dust', null)
+    e.addPotionBrewing('ae2:ender_dust', 'minecraft:awkward', 'betterend:end_veil')
+
+})

@@ -32,14 +32,14 @@ const woodTypesToConstruct = [
     { type: 'aether_redux:glacia' },
     { type: 'aether_redux:fieldsprout' },
     // twilightforest
-    { type: 'twilightforest:twilight_oak' },
-    { type: 'twilightforest:canopy' },
-    { type: 'twilightforest:mangrove' },
-    { type: 'twilightforest:dark' },
-    { type: 'twilightforest:time' },
-    { type: 'twilightforest:transformation' },
-    { type: 'twilightforest:mining' },
-    { type: 'twilightforest:sorting' },
+    // { type: 'twilightforest:twilight_oak' },
+    // { type: 'twilightforest:canopy' },
+    // { type: 'twilightforest:mangrove' },
+    // { type: 'twilightforest:dark' },
+    // { type: 'twilightforest:time' },
+    // { type: 'twilightforest:transformation' },
+    // { type: 'twilightforest:mining' },
+    // { type: 'twilightforest:sorting' },
     // regions_unexplored
     { type: 'regions_unexplored:alpha' }, // undefined wood, stripped
     { type: 'regions_unexplored:baobab' },
@@ -165,13 +165,14 @@ woodTypesToConstruct.forEach(entry => {
     // type exceptions
 
 
-    
+
 
 
     // 🔒 FINALIZATION 🔒
 
     let woodTypeData = {
-        // type: entry.type,
+        modId: modId,
+        woodType: woodType,
         logBlock: logBlock,
         woodBlock: woodBlock,
         logBlockStripped: logBlockStripped,
@@ -180,10 +181,12 @@ woodTypesToConstruct.forEach(entry => {
     }
 
     Object.keys(woodTypeData).forEach(key => {
-        let item = woodTypeData[key]
-        if (!Item.exists(item)) {
-            woodTypeData[key] = undefined
-            // console.log(`DOESN'T EXIST: ${item}`)  // debug
+        if (key != 'modId' && key != 'type') {
+            let item = woodTypeData[key]
+            if (!Item.exists(item)) {
+                woodTypeData[key] = undefined
+                // console.log(`DOESN'T EXIST: ${item}`)  // debug
+            }
         }
     })
 

@@ -13,14 +13,14 @@ ServerEvents.recipes(e => {
         if (woodType.logBlock != undefined) {
             // log to stripped log
             if (woodType.logBlockStripped != undefined && woodType.plankBlock != undefined) {
-                e.recipes.createCutting(woodType.logBlockStripped, woodType.logBlock).processingTime(50).id(`kubejs:cutting/${woodType.logBlock.replace(':', '_')}`)
-                e.recipes.createCutting(Item.of(woodType.plankBlock, 6), woodType.logBlockStripped).processingTime(20).id(`kubejs:cutting/${woodType.logBlockStripped.replace(':', '_')}`)
+                e.recipes.createCutting(woodType.logBlockStripped, woodType.logBlock).processingTime(50).id(`kubejs:create_cutting/${woodType.logBlock.replace(':', '_')}`)
+                e.recipes.createCutting(Item.of(woodType.plankBlock, 6), woodType.logBlockStripped).processingTime(20).id(`kubejs:create_cutting/${woodType.logBlockStripped.replace(':', '_')}`)
             }
 
             // wood to stripped wood
             if (woodType.woodBlock != undefined && woodType.woodBlockStripped != undefined && woodType.plankBlock != undefined) {
-                e.recipes.createCutting(woodType.woodBlockStripped, woodType.woodBlock).processingTime(50).id(`kubejs:cutting/${woodType.woodBlock.replace(':', '_')}`)
-                e.recipes.createCutting(Item.of(woodType.plankBlock, 6), woodType.woodBlockStripped).processingTime(50).id(`kubejs:cutting/${woodType.woodBlockStripped.replace(':', '_')}`)
+                e.recipes.createCutting(woodType.woodBlockStripped, woodType.woodBlock).processingTime(50).id(`kubejs:create_cutting/${woodType.woodBlock.replace(':', '_')}`)
+                e.recipes.createCutting(Item.of(woodType.plankBlock, 6), woodType.woodBlockStripped).processingTime(50).id(`kubejs:create_cutting/${woodType.woodBlockStripped.replace(':', '_')}`)
             }
         }
     })
