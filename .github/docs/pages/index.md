@@ -4,7 +4,7 @@ This modpack was designed for a long-term multiplayer survival world, so we've s
 
 !!! info
     - Minecraft version 1.20.1 for Forge
-    - Server IP is `mrg.cloudnord.net`
+    - Server IP is `mosmods2.cloudnord.net`
     - ~260 mods (many of which are library/API mods that don't add anything)
       - You can find the modlist [here](https://mosharky.github.io/Mos-Mods-2/information_and_guides/modlist/)
     - The modpack auto-updates every time you launch it
