@@ -14,6 +14,7 @@ const woodTypesToConstruct = [
     { type: 'minecraft:warped' },
     { type: 'minecraft:crimson' },
     { type: 'minecraft:mangrove' },
+    { type: 'minecraft:cherry' },
     // rats
     { type: 'rats:pirat' },
     // ad_astra
@@ -32,14 +33,14 @@ const woodTypesToConstruct = [
     { type: 'aether_redux:glacia' },
     { type: 'aether_redux:fieldsprout' },
     // twilightforest
-    { type: 'twilightforest:twilight_oak' },
-    { type: 'twilightforest:canopy' },
-    { type: 'twilightforest:mangrove' },
-    { type: 'twilightforest:dark' },
-    { type: 'twilightforest:time' },
-    { type: 'twilightforest:transformation' },
-    { type: 'twilightforest:mining' },
-    { type: 'twilightforest:sorting' },
+    // { type: 'twilightforest:twilight_oak' },
+    // { type: 'twilightforest:canopy' },
+    // { type: 'twilightforest:mangrove' },
+    // { type: 'twilightforest:dark' },
+    // { type: 'twilightforest:time' },
+    // { type: 'twilightforest:transformation' },
+    // { type: 'twilightforest:mining' },
+    // { type: 'twilightforest:sorting' },
     // regions_unexplored
     { type: 'regions_unexplored:alpha' }, // undefined wood, stripped
     { type: 'regions_unexplored:baobab' },
@@ -64,9 +65,6 @@ const woodTypesToConstruct = [
     { type: 'regions_unexplored:socotra' },
     { type: 'regions_unexplored:willow' },
     { type: 'regions_unexplored:yellow_bioshroom' },
-    // ancient_aether
-    { type: 'ancient_aether:highsproot' },
-    { type: 'ancient_aether:sakura' },
     // betterarcheology
     { type: 'betterarcheology:rotten' }, // undefined wood, stripped
     // betterend
@@ -87,9 +85,15 @@ const woodTypesToConstruct = [
     { type: 'deep_aether:cruderoot' },
     { type: 'deep_aether:conberry' },
     { type: 'deep_aether:sunroot' },
+    { type: 'deep_aether:yagroot' },
     // alexscaves
     { type: 'alexscaves:pewen' },
     { type: 'alexscaves:thornwood' },
+    // quark
+    { type: 'quark:ancient' },
+    { type: 'quark:azalea' },
+    // iceandfire
+    { type: 'iceandfire:dreadwood' }, // undefined wood, stripped
 ]
 
 let constructedWoodTypes = []
@@ -165,13 +169,11 @@ woodTypesToConstruct.forEach(entry => {
     // type exceptions
 
 
-    
-
-
     // 🔒 FINALIZATION 🔒
 
     let woodTypeData = {
-        // type: entry.type,
+        modId: modId,
+        woodType: woodType,
         logBlock: logBlock,
         woodBlock: woodBlock,
         logBlockStripped: logBlockStripped,
@@ -180,10 +182,12 @@ woodTypesToConstruct.forEach(entry => {
     }
 
     Object.keys(woodTypeData).forEach(key => {
-        let item = woodTypeData[key]
-        if (!Item.exists(item)) {
-            woodTypeData[key] = undefined
-            // console.log(`DOESN'T EXIST: ${item}`)  // debug
+        if (key != 'modId' && key != 'type') {
+            let item = woodTypeData[key]
+            if (!Item.exists(item)) {
+                woodTypeData[key] = undefined
+                // console.log(`DOESN'T EXIST: ${item}`)  // debug
+            }
         }
     })
 

@@ -59,7 +59,7 @@ ServerEvents.recipes(e => {
             }
         },
         {
-            result: Item.of('handcrafted:terracotta_cup', 3),
+            result: '3x handcrafted:terracotta_cup',
             id: 'handcrafted:terracotta_cup',
             pattern: [
                 'A A',
@@ -67,6 +67,22 @@ ServerEvents.recipes(e => {
             ],
             key: { A: 'minecraft:terracotta' }
         },
+        {
+            result: 'aquamirae:three_bolt_suit',
+            id: 'aquamirae:three_bolt_suit',
+            pattern: [
+                'ABA',
+                'CDC',
+                'DED'
+            ],
+            key: {
+                A: '#forge:storage_blocks/iron',
+                B: '#forge:storage_blocks/copper',
+                C: 'create:copper_backtank',
+                D: '#forge:leather',
+                E: 'aquamirae:oxygelium',
+            }
+        }
     )
     shapedRecipes.forEach(recipe => {
         recipe.id

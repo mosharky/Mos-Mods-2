@@ -1,8 +1,14 @@
 StartupEvents.registry('item', e => {
-    e.create('no_flight_challenge_token')
-        .tooltip(Text.gray('Use at the No Flight headquarters.'))
-        .rarity('rare')
+    // e.create('no_flight_challenge_token')
+    //     .tooltip(Text.gray('Use at the No Flight headquarters.'))
+    //     .rarity('rare')
+
+    e.create('crushed_raw_calorite').displayName('Crushed Raw Calorite')
+    e.create('crushed_raw_desh').displayName('Crushed Raw Desh')
+    e.create('crushed_raw_ostrum').displayName('Crushed Raw Ostrum')
+    e.create('goblin_icon')
 })
+
 
 StartupEvents.registry('fluid', e => {
     // https://github.com/architectury/architectury-api/blob/1.20/common/src/main/java/dev/architectury/core/fluid/SimpleArchitecturyFluidAttributes.java
@@ -20,7 +26,7 @@ StartupEvents.registry('fluid', e => {
     // .fillSound(SoundEvents.BUCKET_FILL_LAVA)
     // .emptySound(SoundEvents.BUCKET_EMPTY_LAVA)
 
-    let moltenBrass = e.create('molten_brass').displayName('Molten Brass').thickTexture(0xFFF387).bucketColor(0xFFF387)
+    let moltenBrass = e.create('molten_brass').displayName('Molten Brass').thickTexture(0xFBCC68).bucketColor(0xFBCC68)
     moltenBrass.attributes = moltenBrass.createAttributes()
         .dropOff(2)
         .slopeFindDistance(2)
@@ -38,9 +44,7 @@ StartupEvents.registry('fluid', e => {
 // item modification
 ItemEvents.modification(e => {
     global.ironShulkerBoxes.forEach(box => {
-        e.modify(box, item => {
-            item.maxStackSize = 1
-        })
+        e.modify(box, item => item.maxStackSize = 1)
     })
 
     e.modify('rats:potato_knishes', item => {
@@ -61,6 +65,14 @@ ItemEvents.modification(e => {
         }
     })
 
+    e.modify('quark:cooked_crab_leg', item => {
+        item.foodProperties = food => {
+            food
+                .hunger(5)
+                .saturation(0.5)
+        }
+    })
+
     // rats armor nerfing
     e.modify('rats:ratlantis_helmet', item => item.armorProtection = 3)
     e.modify('rats:ratlantis_chestplate', item => item.armorProtection = 9)
@@ -75,8 +87,21 @@ ItemEvents.modification(e => {
     // cataclysm items nerfing
     e.modify('cataclysm:gauntlent_of_guard', item => item.attackDamage = 8)
     e.modify('cataclysm:gauntlent_of_bulwark', item => item.attackDamage = 8)
-    // TODO: why wont these work
     // e.modify('cataclysm:the_incinerator', item => item.attackDamage = 11)
     // e.modify('cataclysm:void_forge', item => item.attackDamage = 13)
     // e.modify('cataclysm:infernal_forge', item => item.attackDamage = 13)
+})
+
+
+// potions
+MoreJSEvents.registerPotionBrewing(e => {
+    /**
+     * 1. Argument: The ingredient of the brewing stand
+     * 2. Argument: The input potion of the brewing stand
+     * 3. Argument: The result potion of the brewing
+     */
+
+    e.removeByPotion('minecraft:awkward', 'betterend:ender_dust', null)
+    e.addPotionBrewing('ae2:ender_dust', 'minecraft:awkward', 'betterend:end_veil')
+
 })

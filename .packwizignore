@@ -20,22 +20,17 @@ LICENSE
 /shaderpacks/
 /mods/appleskin*
 /mods/catalogue*
-/mods/entity_model_features*
-/mods/entity_texture_features*
-/mods/entityculling*
-/mods/euphonium*
 /mods/explosive-enhancement*
-/mods/farsight*
-/mods/foglooksmodernnow*
-/mods/mru*
-/mods/ToastControl*
-/mods/visuality*
-/mods/wakes*
 /mods/cat_jam*
 /mods/seamless*
 /mods/feytweaks*
 /mods/clickthrough*
-/mods/Sonance*
+/mods/easiervillagertrading*
+/mods/extrasounds*
+/mods/EffectDescriptions*
+/mods/durabilitytooltip*
+/mods/lighty*
+/mods/starlight*
 
 # config
 /config/jei/world/

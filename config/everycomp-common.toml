@@ -11,11 +11,11 @@
 
 	[general.tooltips]
 		#Enabled tooltips showing which mod an EC item is from
-		mod_origin_enabled = true
-		#Enabled tooltips showing which block type an EC item is made from
-		block_type_ednabld = true
+		mod_origin_enabled = false
 		#Only show on advanced settings
-		show_on_advanced_tooltips = true
+		show_on_advanced_tooltips = false
+		#Enabled tooltips showing which block type an EC item is made from
+		block_type_enabled = true
 
 	[general.types]
 
@@ -69,10 +69,7 @@
 				cruderoot = true
 				conberry = true
 				sunroot = true
-
-			[general.types.wood_type.ancient_aether]
-				highsproot = true
-				sakura = true
+				yagroot = true
 
 			[general.types.wood_type.aether_redux]
 				fieldsprout = true
@@ -82,22 +79,8 @@
 				crystal = true
 				glacia = true
 
-			[general.types.wood_type.twilightforest]
-				twilight_oak = true
-				canopy = true
-				mangrove = true
-				dark = true
-				time = true
-				transformation = true
-				mining = true
-				sorting = true
-
 			[general.types.wood_type.snifferplus]
 				stone_pine = true
-
-			[general.types.wood_type.enlightened_end]
-				indigo = true
-				cerulean = true
 
 			[general.types.wood_type.alexscaves]
 				pewen = true
@@ -130,6 +113,14 @@
 
 			[general.types.wood_type.betterarcheology]
 				rotten = true
+
+			[general.types.wood_type.quark]
+				azalea = true
+				ancient = true
+				blossom = false
+
+			[general.types.wood_type.iceandfire]
+				dreadwood = true
 
 		[general.types.leaves_type]
 
@@ -166,19 +157,6 @@
 				willow = true
 				ashen = true
 
-			[general.types.leaves_type.twilightforest]
-				beanstalk = true
-				thorn = true
-				twilight_oak = true
-				canopy = true
-				mangrove = true
-				dark = true
-				rainbow_oak = true
-				time = true
-				transformation = true
-				mining = true
-				sorting = true
-
 			[general.types.leaves_type.betternether]
 				willow = true
 				rubeus = true
@@ -191,9 +169,6 @@
 				dragon_tree = true
 				tenanea = true
 				lucernia = true
-
-			[general.types.leaves_type.cobblemon]
-				apricorn = true
 
 			[general.types.leaves_type.ad_astra]
 				glacian = true
@@ -219,13 +194,6 @@
 				conberry = true
 				sunroot = true
 
-			[general.types.leaves_type.ancient_aether]
-				highsproot = true
-				frosted_highsproot = true
-				sakura = true
-				divine_skyroot = true
-				crystal = true
-
 			[general.types.leaves_type.aether_redux]
 				blightwillow = true
 				glacia = true
@@ -243,35 +211,21 @@
 			[general.types.leaves_type.alexscaves]
 				ancient = true
 
+			[general.types.leaves_type.quark]
+				ancient = true
+				blue_blossom = true
+				lavender_blossom = true
+				orange_blossom = true
+				yellow_blossom = true
+				red_blossom = true
+
 	[general.entries]
 
 		[general.entries.wood_type]
 
 			[general.entries.wood_type.dramaticdoors]
-				tall_macaw_stable_door = true
-				tall_macaw_glass_door = true
-				tall_macaw_japanese2_door = true
-				tall_macaw_mystic_door = true
-				tall_macaw_tropical_door = true
-				tall_macaw_bark_glass_door = true
-				tall_macaw_barn_door = true
-				tall_macaw_classic_door = true
-				tall_macaw_stable_head_door = true
-				tall_macaw_four_panel_door = true
-				tall_macaw_cottage_door = true
-				tall_macaw_paper_door = true
-				tall_macaw_barn_glass_door = true
-				tall_macaw_beach_door = true
-				tall_macaw_modern_door = true
-				tall_macaw_swamp_door = true
-				tall_macaw_nether_door = true
-				tall_macaw_japanese_door = true
-
-			[general.entries.wood_type.twilightforest]
-				hollow_log_horizontal = true
-				hollow_log_vertical = true
-				banister = true
-				hollow_log_climbable = true
+				short_door = true
+				tall_door = true
 
 			[general.entries.wood_type.storagedrawers]
 				trim = true
@@ -304,4 +258,20 @@
 
 			[general.entries.wood_type.backpacked]
 				backpack_shelf = true
+
+			[general.entries.wood_type.quark]
+				hollow_log = true
+				vertical_planks = true
+				post = true
+				trapped_chest = true
+				bookshelf = true
+				chest = true
+				stripped_post = true
+				ladder = true
+
+		[general.entries.leaves_type]
+
+			[general.entries.leaves_type.quark]
+				hedge = false
+				leaf_carpet = false
 

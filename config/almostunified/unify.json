@@ -12,7 +12,8 @@
     "occultism",
     "supplementaries",
     "embers",
-    "undergarden"
+    "undergarden",
+    "iceandfire"
   ],
   "stoneStrata": [
     "stone",
@@ -20,7 +21,13 @@
     "deepslate",
     "granite",
     "diorite",
-    "andesite"
+    "andesite",
+    "moon",
+    "venus",
+    "mars",
+    "glacio",
+    "mercury",
+    "galena"
   ],
   "tags": [
     "forge:nuggets/{material}",

@@ -18,7 +18,7 @@ ServerEvents.highPriorityData(e => {
         'trapped_chest'
     ]
 
-    disabledContainerProviders.forEach(container => e.addJson(`minecraft:item_container_providers/${container}`, {type: 'easyshulkerboxes:none'}))
+    disabledContainerProviders.forEach(container => e.addJson(`minecraft:item_container_providers/${container}`, { type: 'easyshulkerboxes:block_entity_view' }))
 
     // supplementaries sack
     e.addJson('supplementaries:item_container_providers/sack', {
