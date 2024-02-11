@@ -7,7 +7,7 @@
 4. After setup, click on **"Add Instance"** on the top left.
 5. On the left, select **"Import"** and copy-paste this link:
     ```
-    https://github.com/mosharky/Mos-Mods-2/releases/download/instance-2.2.0/prism-instance-2.2.0.zip
+    https://github.com/mosharky/Mos-Mods-2/releases/download/2.2.0/Mos-Mods-2-v2.2.0-Instance.zip
     ```
 6. On the bottom, press **"Ok"**.
 7. Launch the modpack by double-clicking the instance or selecting it and pressing **"Launch"** on the right.
