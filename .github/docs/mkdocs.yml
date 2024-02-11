@@ -1,9 +1,9 @@
 # https://squidfunk.github.io/mkdocs-material/getting-started/
 # https://www.mkdocs.org/user-guide/writing-your-docs/
-site_name: Mo's Mons' Wiki
+site_name: Mo's Mods 2 Wiki
 docs_dir: pages
-repo_url: https://github.com/mosharky/Mos-Mons
-repo_name: mosharky/Mos-Mons
+repo_url: https://github.com/mosharky/Mos-Mods-2
+repo_name: mosharky/Mos-Mods-2
 nav:
   - 🏠Home: 'index.md'
   - 📋Information & Guides:
@@ -12,18 +12,19 @@ nav:
     - Additional Tips: 'information_and_guides/additional_tips.md'
     - Modlist: 'information_and_guides/modlist.md'
   - 📜Changelogs:
-    - v2.1.1: 'changelogs/v2.1.1.md'
+    - v2.2.0: 'changelogs/v2.2.0.md'
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.keys # keybind thingy
   - tables
   - toc:
       permalink: true
 theme:
   name: material
-  logo: https://raw.githubusercontent.com/mosharky/Mos-Mons/main/.github/docs/assets/logo.png
-  favicon: https://raw.githubusercontent.com/mosharky/Mos-Mons/main/.github/docs/assets/logo.png
+  logo: https://raw.githubusercontent.com/mosharky/Mos-Mods-2/main/.github/docs/assets/logo.png
+  favicon: https://raw.githubusercontent.com/mosharky/Mos-Mods-2/main/.github/docs/assets/logo.png
   highlightjs: true
   features:
     - navigation.tabs

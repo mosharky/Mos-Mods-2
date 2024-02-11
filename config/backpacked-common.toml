@@ -10,7 +10,7 @@
 
 	[common.wandering_trader]
 		#If enabled, hides the config button from the backpack screen
-		spawnBackpackOnWanderingTraders = true
+		spawnBackpackOnWanderingTraders = false
 		#If true, allows players who are disliked by Wandering Traders to continue to trade normally with them. A player is considered disliked if they are caught when trying to pickpocket a Wandering Trader's backpack.
 		dislikedPlayersCanTrade = false
 		#The maximum multiplier to apply when generating loot in the Wandering Trader backpack

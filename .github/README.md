@@ -1,5 +1,5 @@
-# Mo's Mons' SMP
-A private SMP ran using packwiz. Documentation can be found at https://mosharky.github.io/Mos-Mons/
+# Mo's 'Mons SMP
+A private SMP ran using packwiz. Documentation can be found at https://mosharky.github.io/Mos-Mods-2/
 
 # Developing
 1. Clone the repository's dev branch
@@ -16,7 +16,7 @@ A private SMP ran using packwiz. Documentation can be found at https://mosharky.
 The modpack currently uses packwiz to automatically update/distribute the pack on the client.
 - [Install packwiz](https://packwiz.infra.link/installation/)
 - Run `packwiz refresh` in the VSCode workspace
-- PrismLauncher pre-launch command: `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mosharky/Mos-Mons/main/pack.toml`
+- PrismLauncher pre-launch command: `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mosharky/Mos-Mods-2/main/pack.toml`
 - use `packwiz serve` command to host the pack files locally, and then link to it with `http://localhost:8080/pack.toml`
 
 ## Hosting docs locally

@@ -24,6 +24,6 @@
     "FogDensity [default: 1.0]": 1.0
   },
   "infos": {
-    "survives_on_hint [default: true]": true
+    "survives_on_hint [default: true]": false
   }
 }

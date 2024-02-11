@@ -1,4 +1,4 @@
-# Welcome to the Mo's Mons' SMP!
+# Welcome to the Mo's 'Mons SMP!
 
 This modpack was designed for a long-term multiplayer survival world, so we've skipped on some mods that could fast-track progress and added mods that encourage building. For example, we've skipped on adding the Waystones mod as to encourage everyone to either build closer or to build paths/rails/trains to eachother.
 
@@ -6,13 +6,15 @@ This modpack was designed for a long-term multiplayer survival world, so we've s
     - Minecraft version 1.20.1 for Forge
     - Server IP is `mrg.cloudnord.net`
     - ~260 mods (many of which are library/API mods that don't add anything)
-      - You can find the modlist [here](https://mosharky.github.io/Mos-Mons/information_and_guides/modlist/)
+      - You can find the modlist [here](https://mosharky.github.io/Mos-Mods-2/information_and_guides/modlist/)
     - The modpack auto-updates every time you launch it
+    - The backpack keybind is `B`, and it's not configurable due to a bug
     - We plan to connect eachother with trains eventually
     - Feel free to DM me (**@.mo_mo**) if you have any issues or would like to make a suggestion (please don't feel bad if I reject. I'm picky)
 
 !!! warning
-    - **Do not play in windowed mode**
+    - **Playing in windowed mode will cause stutters and FPS drops**
+    - Entering your inventory for the first time in the session will cause a momentary stutter
 
 
 ***
@@ -20,7 +22,7 @@ This modpack was designed for a long-term multiplayer survival world, so we've s
 
 ## **Features**
 - **Standout mods:**
-    - [Ad Astra](https://modrinth.com/mod/3ufwT9JF) - (**CURRENTLY DISABLED**) Space exploration
+    - [Ad Astra](https://modrinth.com/mod/3ufwT9JF) - Space exploration
     - [Alex's Caves](https://modrinth.com/mod/U6GY0xp0) - Gorgeous cave biomes with cool progression
     - [Alex's Mobs](https://modrinth.com/mod/2cMuAZAp) - 89 new high-quality mobs
     - [Applied Energistics 2](https://modrinth.com/mod/XxWD5pD3) - Mass-storage
@@ -56,9 +58,12 @@ This modpack was designed for a long-term multiplayer survival world, so we've s
 
     | Mod          | Guidebook              |
     | ------------ | ---------------------- |
-    | Ad Astra     | **CURRENTLY DISABLED** |
+    | Ad Astra     | Astrodux               |
     | Alex's Caves | Cave Compendium        |
     | Alex's Mobs  | Animal Dictionary      |
+    | Better End   | The End for Dummies    |
+    | Botania      | Lexica Botania         |
+    | Ice and Fire | Bestiary               |
     | Eidolon      | Ars Ecclesia           |
     | Cobblemon    | Cobblepedia            |
     | Embers       | Ancient Codex          |
@@ -67,8 +72,8 @@ This modpack was designed for a long-term multiplayer survival world, so we've s
     - Backpack
     - Bundle
     - Sack
-- Find how to craft an item by pressing 'R' while hovering over it
-- Find all crafting uses for an item by pressing 'U' while hovering over it
+- Find how to craft an item by pressing `R` while hovering over it
+- Find all crafting uses for an item by pressing `U` while hovering over it
 - Find all items that a mod adds by searching `@modname`
 
 
@@ -80,8 +85,10 @@ This modpack was designed for a long-term multiplayer survival world, so we've s
 ### Misc commands
 - `/kickme` - Kicks yourself from the server
 - `/trashcan` - Opens an inventory where items get deleted when placed in and closed
-- `/hat` - Puts item currently in main hand in helmet slot making it your 'hat'
-- `/nickname [newname]` - Changes nickname in chat
+- `/hat` - Puts item currently in main hand in helmet slot, making it your 'hat'
+- `/nick [new name]` - Changes player nickname
+- `/color [color]` - Sets name color
+- `/bio [text]` - Adds text when someone hovers over your name in chat
 
 ### Teleport commands
 - `/spawn` - Teleports you to spawn

@@ -1,11 +1,5 @@
 - If you want shaders, you'll have to install the [Oculus](https://modrinth.com/mod/oculus) mod. It could introduce a few visual bugs, even if you're not using shaders, so we opted to keep this mod out of the modpack and leave it as a choice
     - A fixed version of Complementary Shaders is already included in the modpack
-- Toggle the inventory item search display by pressing CTRL + O. Your performance will increase in the inventory menu while its disabled.
-- Press 0 in your numpad to configure the widget at the top of your screen that appears when you look at something.
-- Disabling/Configuring certain features:
-    - Custom mob animations: Disable the Fresh Animations resource packs
-    - UI sounds: Esc > Mods > Sonance > Config
-    - Environment sounds: Disable "Euphonium" mod or decrease "Ambient/Environment" sound volume
 - Optional cosmetic mods (these weren't included for performance):
     - [Chunk Animator](https://modrinth.com/mod/chunkanimator) - Chunk loading animations
     - [Falling Leaves](https://modrinth.com/mod/fallingleavesforge) - Leaf particles under trees
@@ -13,3 +7,15 @@
     - [InvMove](https://modrinth.com/mod/invmove) - Move around while in inventory
     - [ItemPhysic Lite](https://modrinth.com/mod/itemphysic-lite) and [CreativeCore](https://modrinth.com/mod/creativecore) - Realistic dropped item models
     - [Continuity](https://modrinth.com/mod/continuity) - Connected textures. Was not included in the modpack due to small visual bugs
+
+
+## Noteable Keybinds
+
+- ++ctrl+o++ (while in inventory): **Toggle the item search display** - Will boost inventory performance if you were struggling
+- ++k++: **Rotation Lock** - Toggle-locks the rotation of all blocks placed depending on the direction you're looking on key-press
+- ++z++: **Hotbar Swapper** - Select an inventory row to swap your hotbar to
+- ++y++: **Search Nearby Inventories for Items** - Hover over an item to search for it in nearby chests
+- ++num0++: **Pull 1 Item From Nearby Inventories** - Hover over an item and press this key to pull it from nearby chests
+- ++num1++: **Pull 1 Stack From Nearby Inventories** - Hover over an item and press this key to pull a stack of it from nearby chests
+- ++num7++: **Toggle Overlay** - Show/hide the block display widget at the top of your screen
+- ++num8++: **Configure Overlay** - Configure the block display widget at the top of your screen

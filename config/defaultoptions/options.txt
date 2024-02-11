@@ -43,8 +43,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:7
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","builtin/overrides_pack","default_seamless","builtin/DAGoldenSwetBallFixClient","builtin/deep_aether_additional_assets","file/FreshAnimations_v1.8.1.zip","file/Icon - Xaero X FA - v2.4 (1.20.2).zip","black_icons"]
-incompatibleResourcePacks:["builtin/DAGoldenSwetBallFixClient","builtin/deep_aether_additional_assets","file/FreshAnimations_v1.8.1.zip","file/Icon - Xaero X FA - v2.4 (1.20.2).zip"]
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","builtin/overrides_pack","default_seamless","builtin/DAGoldenSwetBallFixClient","builtin/deep_aether_additional_assets","black_icons"]
+incompatibleResourcePacks:["builtin/DAGoldenSwetBallFixClient","builtin/deep_aether_additional_assets"]
 lastServer:
 lang:en_us
 soundDevice:""
