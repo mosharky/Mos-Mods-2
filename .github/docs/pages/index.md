@@ -1,4 +1,4 @@
-# Welcome to the Mo's 'Mons SMP!
+# Welcome to the Mo's Mods 2 SMP!
 
 This modpack was designed for a long-term multiplayer survival world, so we've skipped on some mods that could fast-track progress and added mods that encourage building. For example, we've skipped on adding the Waystones mod as to encourage everyone to either build closer or to build paths/rails/trains to eachother.
 
@@ -30,7 +30,6 @@ This modpack was designed for a long-term multiplayer survival world, so we've s
     - [Better End](https://modrinth.com/mod/gc8OEnCC) - End overhaul
     - [Better Nether](https://modrinth.com/mod/MpzVLzy5) - Nether overhaul
     - [Cataclysm](https://modrinth.com/mod/46KJle7n) - The best boss fights you can get in Minecraft
-    - [Cobblemon](https://modrinth.com/mod/MdwFAVRL) - Pokemon!
     - [Create](https://modrinth.com/mod/create) - Factories, trains, logistics, automating everything
     - [Domestication Innovation](https://modrinth.com/mod/h5JyLdjM) - Pet overhaul
     - [Eidolon](https://modrinth.com/mod/eidolonrepraised) - Rituals, conjuration, magic
@@ -39,7 +38,6 @@ This modpack was designed for a long-term multiplayer survival world, so we've s
     - [Regions Unexplored](https://modrinth.com/mod/Tkikq67H) - Beautiful biomes of all kinds
     - [Simple Voice Chat](https://modrinth.com/mod/9eGKb6K1) - Proximity voice chat!
     - [The Aether](https://modrinth.com/mod/YhmgMVyu) - You already know what this is :)
-    - [The Twilight Forest](https://www.curseforge.com/projects/227639) - This too!
 - **Custom scripting:**
     - Full overhaul of vanilla world generation
     - Tons of compatibility scripts
@@ -48,6 +46,7 @@ This modpack was designed for a long-term multiplayer survival world, so we've s
     - Removed overlapping features and items between mods
     - Custom recipes
     - Removed annoying advancements
+    - Progression changes
 
 
 ***

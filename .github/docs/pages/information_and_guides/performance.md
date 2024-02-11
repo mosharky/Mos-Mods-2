@@ -34,5 +34,5 @@ The modpack by default uses and at-minimum needs 4000MB or 4GB of memory allocat
             - At the given distance, entities/mobs will stop rendering
         - Enable **"Use Max Block Entity Distance"**
             - At the given distance, interactable blocks like chests, barrels, furnaces, campfires, etc. will stop rendering.
-- Besides changing in-game settings, you could try to add some more intense performance mods:
+- Besides changing in-game settings, you could try to add some more intense performance mods. Keep in mind; I have not tested these:
     - [Methane](https://modrinth.com/mod/methane)

@@ -993,14 +993,6 @@ file = "config/embers-common.toml"
 hash = "54ba494a13ea46c303bf50b58bfc4103d76c266e55ebe9c63e3354b2423970e6"
 
 [[files]]
-file = "config/emi.css"
-hash = "12bf5be264a32ff2d7118688a4602f18bb3ff7fb1fda4b81bded4970100bcce4"
-
-[[files]]
-file = "config/emitrades.json5"
-hash = "1ed0ed3da45ed6bc11cdb624218f76f8e52b63818703b25e717bbbec615e6e92"
-
-[[files]]
 file = "config/enchdesc.json"
 hash = "0ef70a95ec5f5890fc40040926b546e5689044b3976a497a2b1ef91436a43a7f"
 
@@ -1466,7 +1458,7 @@ hash = "c8407c81c41d227c7f734ba5abafff9f5c3c533b66a9695e5d5f04afdcedeacd"
 
 [[files]]
 file = "config/nmpvc-common.toml"
-hash = "ca5d7add2df4d34e7bf68e6e75210b5352dc8e6e2c0b8c308dfd2fdacd0ced96"
+hash = "73ce3064e9dc87521477cd4d604fc8d1ea9e4918fde9fe8bd6bb163d86d94b5b"
 
 [[files]]
 file = "config/numismatic-overhaul.json5"
@@ -3895,10 +3887,6 @@ hash = "5c7d91703e764fb121aad31615f98853bebac31e459debdbd15789d945b5d5b8"
 [[files]]
 file = "mods/zettergallery-1.20-0.5.3.jar"
 hash = "763016651d4b4c590afb73ca7cfcf47af85f517bc3d8682aeb760c1fb4b8a18a"
-
-[[files]]
-file = "resourcepacks/Quark Programmer Art.zip"
-hash = "41cb720cf256a12ea247b2f38068b363aa5b1675470c4b5aa66850701a78bc4d"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.0.1.txt"
