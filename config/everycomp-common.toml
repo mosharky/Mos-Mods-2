@@ -117,7 +117,7 @@
 			[general.types.wood_type.quark]
 				azalea = true
 				ancient = true
-				blossom = true
+				blossom = false
 
 			[general.types.wood_type.iceandfire]
 				dreadwood = true
@@ -260,14 +260,14 @@
 				backpack_shelf = true
 
 			[general.entries.wood_type.quark]
-				hollow_log = false
-				vertical_planks = false
-				post = false
-				trapped_chest = false
-				bookshelf = false
-				chest = false
-				stripped_post = false
-				ladder = false
+				hollow_log = true
+				vertical_planks = true
+				post = true
+				trapped_chest = true
+				bookshelf = true
+				chest = true
+				stripped_post = true
+				ladder = true
 
 		[general.entries.leaves_type]
 

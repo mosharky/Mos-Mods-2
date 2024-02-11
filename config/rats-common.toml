@@ -20,9 +20,9 @@
 	#True if iron golems will attack wild rats
 	"Golems Target Rats" = true
 	#True if pet shops can spawn in villages
-	"Village Pet Shops" = true
+	"Village Pet Shops" = false
 	#True if garbage heaps can spawn in villages
-	"Village Garbage Heap" = true
+	"Village Garbage Heap" = false
 	#Defines how often Pet Shops should spawn in villages. A higher number means Pet Shops will spawn more often.
 	#Range: 0 ~ 100
 	"Village Pet Shop Weight" = 15

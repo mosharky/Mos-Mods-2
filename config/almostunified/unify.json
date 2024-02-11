@@ -22,7 +22,12 @@
     "granite",
     "diorite",
     "andesite",
-    "moon"
+    "moon",
+    "venus",
+    "mars",
+    "glacio",
+    "mercury",
+    "galena"
   ],
   "tags": [
     "forge:nuggets/{material}",

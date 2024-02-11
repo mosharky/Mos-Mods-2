@@ -23,6 +23,7 @@ LICENSE
 /config/xaerominimap_entities.json
 /config/fabric/indigo-renderer.properties
 /config/spark/activity.json
+/config/embeddium-fingerprint.json
 
 # root folders
 /not-enough-crashes/
@@ -65,4 +66,4 @@ LICENSE
 /server-resource-packs/
 /coremods/
 /texturepacks/
-/minecraftinstance.json
+minecraftinstance.json

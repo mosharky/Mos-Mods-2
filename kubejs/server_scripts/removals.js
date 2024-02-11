@@ -1,13 +1,7 @@
 //priority: 7
-
-
-
 ServerEvents.recipes(e => {
-    // Removes inputs and outputs from global array fullRemoval
-    global.fullRemovals.forEach(removal => {
-        e.remove({ input: removal })
-        e.remove({ output: removal })
-    })
+
+    e.remove({type: 'bclib:alloying'})
 
     // Removes by recipe ID
     let idRemovals = [
@@ -20,19 +14,28 @@ ServerEvents.recipes(e => {
         /embers:.*hammering/,
         'alexscaves:furnace/smooth_bone_smelting',
         'rats:cheese',
-        'ad_astra:recipes/cheese',
+        // 'ad_astra:recipes/cheese',
         'salt:gunpowder',
         'alexscaves:gunpowder_from_sulfur',
         'embers:copper_nugget_to_ingot',
-        /bclib:.*/,
+        // /bclib:.*/,
         // mod-specific/container_overhaul
         /.*ironshulkerbox.*/,
         'minecraft:shulker_box',
         'deep_aether:skyroot_crafting_table',
-        'aether:skyroot_crafting_table'
+        'aether:skyroot_crafting_table',
+        'createbigcannons:compacting/iron_to_cast_iron_ingot',
+        /regions_unexplored:stick_from(.*branch|.*beard)/,
     ]
+
     idRemovals.forEach(removal => {
         e.remove({ id: removal })
+    })
+
+    // Removes inputs and outputs from global array fullRemoval
+    global.fullRemovals.forEach(removal => {
+        e.remove({ input: removal })
+        e.remove({ output: removal })
     })
 
     global.inventoryReplacement.forEach(replacement => {

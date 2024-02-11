@@ -7,16 +7,16 @@
 4. After setup, click on **"Add Instance"** on the top left.
 5. On the left, select **"Import"** and copy-paste this link:
     ```
-    https://github.com/mosharky/Mos-Mons/releases/download/instance-2.1.1/prism-instance-2.1.1.zip
+    https://github.com/mosharky/Mos-Mods-2/releases/download/instance-2.2.0/prism-instance-2.2.0.zip
     ```
 6. On the bottom, press **"Ok"**.
-7. Once it's installed, go to the top right **"Accounts"** button and select **"Manage accounts"**.
-8. On the top right, select **"Add Microsoft"** and follow the instructions.
-9. Launch the modpack by double-clicking the instance or selecting it and pressing **"Launch"** on the right.
+7. Launch the modpack by double-clicking the instance or selecting it and pressing **"Launch"** on the right.
+8. Follow the instructions to log into your Microsoft account
 
 
 !!! warning
     - **The modpack will auto-install on launch, and will auto-update if there is one.**
+    - You will crash when launching the modpack for the first time. Don't worry, it's normal, just launch it again for smooth sailing.
 
 
 ***

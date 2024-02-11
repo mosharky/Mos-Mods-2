@@ -1,6 +1,6 @@
 //priority: 10
 
-// item tags
+// ⚠️ ITEMS ⚠️
 ServerEvents.tags('item', e => {
     e.add('forge:cheeses/normal', 'brewinandchewin:flaxen_cheese_wedge')
     e.add('forge:cheeses/nether', 'brewinandchewin:scarlet_cheese_wedge')
@@ -11,15 +11,28 @@ ServerEvents.tags('item', e => {
         'createdeco:zinc_sheet',
     ])
     e.add('forge:plates/zinc', 'createdeco:zinc_sheet',)
+    e.add('kubejs:raw_lobster', [
+        'alexsmobs:lobster_tail',
+        'crabbersdelight:clawster'
+    ])
+    e.add('kubejs:raw_crab', [
+        'crabbersdelight:crab',
+        'quark:crab_leg'
+    ])
+    e.add('crabbersdelight:raw_seafood', [
+        'alexsmobs:lobster_tail',
+        'quark:crab_leg',
+        'alexscaves:mussel',
+    ])
+    e.add('crabbersdelight:cooked_seafood', [
+        'alexsmobs:cooked_lobster_tail',
+        'quark:cooked_crab_leg',
+        'alexscaves:cooked_mussel',
+    ])
 
-    e.remove('minecraft:copper_ores', [
-        'ad_astra:mars_diamond_ore',
-        'ad_astra:venus_diamond_ore'
-    ])
-    e.add('minecraft:diamond_ores', [
-        'ad_astra:mars_diamond_ore',
-        'ad_astra:venus_diamond_ore'
-    ])
+    e.add('createbigcannons:block_cast_iron', 'create:industrial_iron_block')
+    e.add('createbigcannons:nugget_cast_iron', 'createdeco:industrial_iron_nugget')
+    e.add('createbigcannons:ingot_cast_iron', 'createdeco:industrial_iron_ingot')
 
     e.remove('c:iron_ingots', 'betternether:cincinnasite_ingot')
     e.add('forge:ores/redstone', 'betternether:nether_redstone_ore')
@@ -38,10 +51,68 @@ ServerEvents.tags('item', e => {
         if (Item.of(item).isEdible()) caveDwarfFoods.push(item)
     })
     e.add('kubejs:cave_dwarf_foods', caveDwarfFoods)
+    e.add('kubejs:cave_dwarf_hammers', [
+        'embers:tinker_hammer',
+        'embers:grandhammer',
+        'iceandfire:troll_weapon_hammer',
+        'mutantmonsters:hulk_hammer',
+        'aether:hammer_of_kingbdogz'
+    ])
+    e.add('kubejs:precious_equipment', [
+        /minecraft:golden_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
+        /minecraft:netherite_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
+        /eidolon:silver_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
+        /eidolon:bonelord_(helm|chestplate|greaves)/,
+        /botania:(manasteel|terrasteel|elementium)_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
+        /embers:ashen_(goggles|cloak|leggings|boots)/,
+        /embers:dawnstone_(axe|sword|pickaxe|shovel|hoe)/,
+        /embers:clockwork_(axe|grandhammer|pickaxe)/,
+        /create:netherite_diving_(helmet|backtank|boots)/,
+        'alexscaves:diving_leggings',
+        /iceandfire:dragonsteel_.*_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
+        /rats:ratlantis_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
+        /cataclysm:ignitium_(helmet|.*chestplate|leggings|boots)/,
+        /aether:(valkyrie|gravitite)_(helmet|chestplate|leggings|boots|lance|axe|sword|pickaxe|shovel|hoe)/,
+        /cataclysm:(bulwark_of_the_flame|the_incinerator|gauntlet_of_guard|gauntlent_of_bulwark|meat_shredder|void_forge|tidal_claws|infernal_forge|monstrous_helm)/,
+    ])
 
+    e.add('origins:meat', [
+        /farmersdelight:(chicken_cuts|cooked_chicken_cuts|minced_beef|beef_patty|bacon|cooked_bacon|mutton_chops|cooked_mutton_chops|ham|smoked_ham)/,
+        'crabbersdelight:fish_stick',
+        '#crabbersdelight:raw_seafood',
+        '#crabbersdelight:cooked_seafood',
+        'crabbersdelight:cooked_tropical_fish_slice',
+        '#forge:raw_fishes',
+        '#forge:cooked_fishes',
+        '#endersdelight:shulker_loot',
+        '#miners_delight:bat_wing',
+        'miners_delight:bat_soup',
+        '#miners_delight:insect_meat',
+        'miners_delight:insect_stew',
+        'miners_delight:seasoned_arthropods',
+        '#minecraft:fishes',
+        'nethersdelight:hoglin_loin',
+        'nethersdelight:hoglin_sirloin',
+        'nethersdelight:hoglin_ear',
+        'nethersdelight:strider_slice',
+        'nethersdelight:ground_strider',
+        'alexsmobs:cooked_kangaroo_meat',
+        'alexsmobs:kangaroo_meat',
+        '#alexscaves:raw_meats',
+        'alexscaves:cooked_trilocaris_tail',
+        'alexscaves:mussel',
+        'alexscaves:cooked_mussel',
+        'rats:raw_rat',
+        'rats:cooked_rat',
+        'deep_aether:raw_quail',
+        'deep_aether:cooked_quail',
+        'deep_aether:raw_aerglow_fish',
+        'deep_aether:cooked_aerglow_fish',
+    ])
 })
 
-// block tags
+
+// ⚠️ BLOCKS ⚠️
 ServerEvents.tags('block', e => {
     // fixing frozen grass being placed on top of snowrealmagic:snow
     e.remove('regions_unexplored:snow_plant_can_survive_on', '#minecraft:snow')
@@ -70,7 +141,48 @@ ServerEvents.tags('fluid', e => {
     ])
 })
 
+
+// ⚠️ ENTITIES ⚠️
 ServerEvents.tags('entity_type', e => {
+    e.add('forge:bosses', [
+        'cataclysm:amethyst_crab',
+        'cataclysm:ancient_remnant',
+        'cataclysm:ender_guardian',
+        'cataclysm:ignis',
+        'cataclysm:netherite_monstrosity',
+        'cataclysm:the_harbinger',
+        'cataclysm:the_leviathan',
+        'cataclysm:the_prowler',
+        'cataclysm:the_watcher',
+        'iceandfire:fire_dragon',
+        'iceandfire:ice_dragon',
+        'iceandfire:lightning_dragon',
+        'iceandfire:gorgon',
+        'iceandfire:cyclops',
+        'iceandfire:siren',
+        'iceandfire:death_worm',
+        'iceandfire:troll',
+        'iceandfire:myrmex_queen',
+        'iceandfire:hydra',
+        'conjurer_illager:conjurer',
+    ])
+    e.add('ad_astra:can_survive_extreme_cold', '#forge:bosses')
+    e.add('ad_astra:can_survive_in_space', '#forge:bosses')
+    e.add('aether:no_skyroot_double_drops', '#forge:bosses')
+    e.add('alexsmobs:ignores_kimono', '#forge:bosses')
+    e.add('alexsmobs:sunbird_scorch_targets', '#forge:bosses')
+    e.add('botania:shaded_mesa_blacklist', '#forge:bosses')
+    e.add('cataclysm:ignis_cant_poke', '#forge:bosses')
+    e.add('domesticationinnovation:infamy_target_attracked', '#forge:bosses')
+    e.add('endermanoverhaul:cant_be_teleported', '#forge:bosses')
+    e.add('minecraft:fall_damage_immune', '#forge:bosses')
+    e.add('minecraft:freeze_immune_entity_types', '#forge:bosses')
+
+    e.add('numismatic-overhaul:the_bourgeoisie', [
+        '#minecraft:raiders',
+        'quark:forgotten',
+    ])
+
     e.removeAll('supplementaries:cage_catchable')
     e.add('supplementaries:cage_catchable', [
         'minecraft:allay',
@@ -231,14 +343,8 @@ ServerEvents.tags('entity_type', e => {
         'aether:sheepuff',
         'aether:sentry',
         'aether_redux:vanilla_swet',
-        'dragonmounts:dragon',
         'eidolon:raven',
         'eidolon:slimy_slug',
-        'endertrigon:baby_ender_dragon',
-        // 'enlightened_end:bouncer',
-        // 'enlightened_end:floating_elevibloom',
-        // 'enlightened_end:radiator',
-        // 'enlightened_end:ringling',
         'galosphere:spectre',
         'galosphere:sparkle',
         'galosphere:specterpillar',
@@ -254,28 +360,8 @@ ServerEvents.tags('entity_type', e => {
         'rats:rat',
         'rats:ratfish',
         'rats:tamed_rat',
-        'snuffles:snuffle',
-        // 'twilightforest:bighorn_sheep',
-        // 'twilightforest:boar',
-        // 'twilightforest:carminite_ghastling',
-        // 'twilightforest:deer',
-        // 'twilightforest:dwarf_rabbit',
-        // 'twilightforest:helmet_crab',
-        // 'twilightforest:kobold',
-        // 'twilightforest:maze_slime',
-        // 'twilightforest:penguin',
-        // 'twilightforest:raven',
-        // 'twilightforest:squirrel',
-        // 'twilightforest:swarm_spider',
-        // 'twilightforest:tiny_bird',
-        // 'twilightforest:towerwood_borer',
-        'undergarden:gloomper',
-        'undergarden:gwib',
-        'undergarden:mog',
-        'undergarden:muncher',
-        'undergarden:rotling',
-        'undergarden:scintling',
-        'undergarden:sploogie',
         'railways:conductor',
+        'quark:crab',
+        'quark:shiba'
     ])
 })

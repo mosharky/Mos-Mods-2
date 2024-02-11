@@ -6,7 +6,7 @@ This modpack was designed for a long-term multiplayer survival world, so we've s
     - Minecraft version 1.20.1 for Forge
     - Server IP is `mrg.cloudnord.net`
     - ~260 mods (many of which are library/API mods that don't add anything)
-      - You can find the modlist [here](https://mosharky.github.io/Mos-Mons/information_and_guides/modlist/)
+      - You can find the modlist [here](https://mosharky.github.io/Mos-Mods-2/information_and_guides/modlist/)
     - The modpack auto-updates every time you launch it
     - The backpack keybind is `B`, and it's not configurable due to a bug
     - We plan to connect eachother with trains eventually

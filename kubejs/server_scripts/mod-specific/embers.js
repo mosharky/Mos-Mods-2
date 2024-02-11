@@ -9,20 +9,28 @@ ServerEvents.recipes(e => {
         // optional
         if (bonus != undefined) recipeObj.bonus = arrayFluid(bonus)
 
-        return e.custom(recipeObj)
+        return e.custom(recipeObj).id(`kubejs:embers/melting/${input.split(':')[1]}`)
     }
 
     function embersStamping(obj) {
+        // fluid must be a tag btw
         let recipeObj = {
             type: 'embers:stamping',
             stamp: Ingredient.of(obj.stamp).toJson(),
             output: Ingredient.of(obj.output).toJson()
         }
         // optional
-        if (obj.input != undefined) recipeObj.input = Ingredient.of(obj.input).toJson()
-        if (obj.fluid != undefined) recipeObj.fluid = arrayFluid(obj.fluid)
+        if (obj.fluid != undefined) {
+            recipeObj.fluid = arrayFluid(obj.fluid)
+            e.custom(recipeObj).id(`kubejs:embers/stamping/${obj.fluid[0].split(':')[1]}_to_${obj.output.split(':')[1]}`)
+        }
 
-        return e.custom(recipeObj)
+        if (obj.input != undefined) {
+            recipeObj.input = Ingredient.of(obj.input).toJson()
+            if (obj.fluid == undefined) {
+                return e.custom(recipeObj).id(`kubejs:embers/stamping/${obj.input.split(':')[1]}_to_${obj.output.split(':')[1]}`)
+            }
+        }
     }
 
     // function embersMixing(inputs, output) { }
@@ -53,21 +61,28 @@ ServerEvents.recipes(e => {
     // bronze
     embersMelting('createbigcannons:bronze_scrap', ['createbigcannons:molten_bronze', 10]).id('embers:melting/nuggets/bronze')
 
+    // cast iron
+    embersMelting('createdeco:industrial_iron_ingot', ['createbigcannons:molten_cast_iron', 90])
+    embersMelting('create:industrial_iron_block', ['createbigcannons:molten_cast_iron', 810])
+    embersMelting('createdeco:industrial_iron_nugget', ['createbigcannons:molten_cast_iron', 10])
+
 
     // ⚠️ STAMPING ⚠️
     // zinc
-    embersStamping({ fluid: ['#forge:molten_zinc', 90], stamp: 'embers:ingot_stamp', output: '#forge:ingots/zinc' })
-    embersStamping({ fluid: ['#forge:molten_zinc', 90], stamp: 'embers:plate_stamp', output: '#forge:plates/zinc' })
-    embersStamping({ fluid: ['#forge:molten_zinc', 10], stamp: 'embers:nugget_stamp', output: '#forge:nuggets/zinc' })
+    embersStamping({ fluid: ['#forge:molten_zinc', 90], stamp: 'embers:ingot_stamp', output: 'create:zinc_ingot' })
+    embersStamping({ fluid: ['#forge:molten_zinc', 90], stamp: 'embers:plate_stamp', output: 'createdeco:zinc_sheet' })
+    embersStamping({ fluid: ['#forge:molten_zinc', 10], stamp: 'embers:nugget_stamp', output: 'create:zinc_nugget' })
 
     // brass
-    embersStamping({ fluid: ['#forge:molten_brass', 90], stamp: 'embers:ingot_stamp', output: '#forge:ingots/brass' })
-    embersStamping({ fluid: ['#forge:molten_brass', 90], stamp: 'embers:plate_stamp', output: '#forge:plates/brass' })
-    embersStamping({ fluid: ['#forge:molten_brass', 10], stamp: 'embers:nugget_stamp', output: '#forge:nuggets/brass' })
+    embersStamping({ fluid: ['#forge:molten_brass', 90], stamp: 'embers:ingot_stamp', output: 'create:brass_ingot' })
+    embersStamping({ fluid: ['#forge:molten_brass', 90], stamp: 'embers:plate_stamp', output: 'create:brass_sheet' })
+    embersStamping({ fluid: ['#forge:molten_brass', 10], stamp: 'embers:nugget_stamp', output: 'create:brass_nugget' })
 
-    // other
-    embersStamping({ fluid: ['#forge:molten_brass', 10], stamp: 'embers:nugget_stamp', output: '#forge:nuggets/brass' })
-    embersStamping({ input: 'minecraft:iron_ingot', stamp: 'embers:flat_stamp', output: 'createbigcannons:cast_iron_ingot' })
+    // cast iron
+    embersStamping({ input: 'minecraft:iron_ingot', stamp: 'embers:flat_stamp', output: 'createdeco:industrial_iron_ingot' })
+    embersStamping({ fluid: ['#forge:molten_cast_iron', 10], stamp: 'embers:flat_stamp', output: 'createdeco:industrial_iron_nugget' })
+    embersStamping({ fluid: ['#forge:molten_cast_iron', 90], stamp: 'embers:flat_stamp', output: 'createdeco:industrial_iron_ingot' })
+
 
 
     // ⚠️ MIXING ⚠️
@@ -78,5 +93,5 @@ ServerEvents.recipes(e => {
             { tag: 'forge:molten_copper', amount: 2 },
         ],
         output: Fluid.of('kubejs:molten_brass', 4).toJson()
-    })
+    }).id('kubejs:embers/mixing/brass_alloy')
 })

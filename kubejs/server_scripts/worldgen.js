@@ -5,58 +5,6 @@ const CONFIGURED = 'configured'
 // worldgen tags
 ServerEvents.tags('worldgen/biome', e => {
 
-
-    /**
-     * @param {String | Array} tag string tag or array of tags
-     * @returns {Array}
-     */
-    function tagToArray(tags) {
-        let finalArray = []
-        if (Array.isArray(tags)) {
-            tags.forEach(tag => {
-                finalArray.push(e.get(tag).getObjectIds())
-            })
-        } else finalArray.push(e.get(tags).getObjectIds())
-
-        return finalArray
-    }
-
-
-    // TODO: why tf dont these functions work
-    // returns set of all things in tags array/set
-    function tagUnion(tags) {
-        let union = new Set()
-        tags.forEach(tag => {
-            e.get(tag).objectIds.forEach(element => {
-                union.add(element)
-            })
-        })
-        return union
-    }
-
-    // delete from set; deletions is an array/set
-    function setDelete(deletions, set) {
-        let newSet = new Set(set)
-        deletions.forEach(deletion => {
-            newSet.delete(deletion)
-        })
-        return newSet
-    }
-
-    // returns a set of shared elements between setA and setB
-    function setIntersection(setA, setB) {
-        let intersection = new Set()
-        setB.forEach(element => {
-            // if element is not in inclusionSet, then remove it
-            if (setA.has(element)) {
-                intersection.add(element)
-            }
-        })
-        return intersection
-    }
-
-
-
     // e.removeAll('kawaiidishes:coffee_gen')
     // e.add('kawaiidishes:coffee_gen', [
         // '#minecraft:is_jungle',
@@ -178,12 +126,12 @@ ServerEvents.tags('worldgen/biome', e => {
 
     e.removeAll('betterarcheology:has_structure/archeologist_camp_grassy')
     e.add('betterarcheology:has_structure/archeologist_camp_grassy',
-        tagToArray(['minecraft:is_forest', 'minecraft:is_taiga', 'forge:is_plains'])
+        tagToArray(e, ['minecraft:is_forest', 'minecraft:is_taiga', 'forge:is_plains'])
     )
 
     e.removeAll('betterarcheology:has_structure/archeologist_camp_redsand')
     e.add('betterarcheology:has_structure/archeologist_camp_redsand',
-        tagToArray('minecraft:is_badlands').concat(['regions_unexplored:outback'])
+        tagToArray(e, 'minecraft:is_badlands').concat(['regions_unexplored:outback'])
     )
 
     e.removeAll('betterarcheology:has_structure/archeologist_camp_sand')
@@ -246,22 +194,22 @@ ServerEvents.tags('worldgen/biome', e => {
 
     e.removeAll('betterarcheology:has_structure/mott')
     e.add('betterarcheology:has_structure/mott',
-        tagToArray(['minecraft:is_forest', 'minecraft:is_taiga', 'forge:is_plains'])
+        tagToArray(e, ['minecraft:is_forest', 'minecraft:is_taiga', 'forge:is_plains'])
     )
 
     e.removeAll('betterarcheology:has_structure/stonehenge_grassy')
     e.add('betterarcheology:has_structure/stonehenge_grassy',
-        tagToArray('forge:is_plains')
+        tagToArray(e, 'forge:is_plains')
     )
 
     e.removeAll('betterarcheology:has_structure/temple_jungle')
     e.add('betterarcheology:has_structure/temple_jungle',
-        tagToArray('minecraft:is_jungle')
+        tagToArray(e, 'minecraft:is_jungle')
     )
 
     e.removeAll('betterarcheology:has_structure/tumulus_grassy')
     e.add('betterarcheology:has_structure/tumulus_grassy',
-        tagToArray(['minecraft:is_forest', 'minecraft:is_taiga', 'forge:is_plains'])
+        tagToArray(e, ['minecraft:is_forest', 'minecraft:is_taiga', 'forge:is_plains'])
     )
 
 
@@ -315,4 +263,5 @@ ServerEvents.highPriorityData(e => {
     removeBiomeModifier('eidolon:silver_ore')
     removeBiomeModifier('embers:add_lead_ore')
     removeBiomeModifier('embers:add_silver_ore')
+    removeBiomeModifier('crabbersdelight:crab')
 })

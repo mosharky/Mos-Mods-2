@@ -1,13 +1,13 @@
-name = "Mo's 'Mons SMP"
+name = "Mo's Mods 2"
 author = "mosharky"
-version = "2.1.1"
+version = "2.2.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "76e340a35eb16c2b0319506b72fb496dfb43988b677061196a7ca6878bdf2ca1"
+hash = "c024a18bd8045ecf1b130cc0d2293a8d46aecd380fbac4cfe7369dc27c88efcf"
 
 [versions]
-forge = "47.2.8"
+forge = "47.1.3"
 minecraft = "1.20.1"

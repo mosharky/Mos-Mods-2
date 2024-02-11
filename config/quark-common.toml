@@ -25,6 +25,8 @@
 	"Terrablender Modify Vanilla Anyway" = false
 	#Set to false to disable the popup message telling you that you can config quark in the q menu
 	"Enable Onboarding" = false
+	#The amount of slots the chest button system should seek when trying to figure out if a container should be eligible for them.
+	"Chest Button Slot Target" = 27
 
 [categories]
 	automation = true
@@ -99,7 +101,7 @@
 	"Celebratory Lamps" = false
 	"Compressed Blocks" = true
 	"Duskbound Blocks" = true
-	"Framed Glass" = false
+	"Framed Glass" = true
 	"Glass Item Frame" = true
 	"Gold Bars" = true
 	Grate = true
@@ -115,13 +117,13 @@
 	"Nether Brick Fence Gate" = true
 	"Rainbow Lamps" = true
 	"Raw Metal Bricks" = true
-	Rope = false
+	Rope = true
 	"Shear Vines" = true
 	Shingles = false
 	"Soul Sandstone" = true
 	Stools = false
 	"Sturdy Stone" = true
-	Thatch = true
+	Thatch = false
 	"Variant Bookshelves" = true
 	"Variant Chests" = true
 	"Variant Furnaces" = true
@@ -149,10 +151,10 @@
 		"Enable Stick Block" = true
 		"Enable Apple Crate" = true
 		"Enable Golden Apple Crate" = true
-		"Enable Potato Crate" = true
-		"Enable Carrot Crate" = true
+		"Enable Potato Crate" = false
+		"Enable Carrot Crate" = false
 		"Enable Golden Carrot Crate" = true
-		"Enable Beetroot Crate" = true
+		"Enable Beetroot Crate" = false
 		"Enable Cocoa Bean Sack" = true
 		"Enable Nether Wart Sack" = true
 		"Enable Gunpowder Sack" = true
@@ -177,7 +179,7 @@
 
 	[building.industrial_palette]
 		"Enable Iron Plates" = true
-		"Enable Iron Ladder" = true
+		"Enable Iron Ladder" = false
 
 	[building.japanese_palette]
 		"Enable Paper Blocks" = true
@@ -185,8 +187,8 @@
 
 	[building.leaf_carpet]
 		#This feature disables itself if any of the following mods are loaded:
-		# - immersive_weathering
 		# - woodworks
+		# - immersive_weathering
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -220,8 +222,8 @@
 		#Allowed values: [0,1]
 		"Fall Damage Multiplier" = 0.5
 		#This feature disables itself if any of the following mods are loaded:
-		# - environmental
 		# - goated
+		# - environmental
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -331,7 +333,7 @@
 	"Color Runes" = true
 	"Endermosh Music Disc" = true
 	"Parrot Eggs" = true
-	"Pathfinder Maps" = true
+	"Pathfinder Maps" = false
 	Pickarang = true
 	"Seed Pouch" = true
 	"Skull Pikes" = true
@@ -353,7 +355,7 @@
 
 	[tools.ancient_tomes]
 		#Format is lootTable,weight. i.e. "minecraft:chests/stronghold_library,30"
-		"Loot Tables" = ["minecraft:chests/stronghold_library,20", "minecraft:chests/simple_dungeon,20", "minecraft:chests/bastion_treasure,25", "minecraft:chests/woodland_mansion,15", "minecraft:chests/nether_bridge,0", "minecraft:chests/underwater_ruin_big,0", "minecraft:chests/underwater_ruin_small,0", "minecraft:chests/ancient_city,4", "quark:misc/monster_box,5"]
+		"Loot Tables" = ["minecraft:chests/stronghold_library,20", "minecraft:chests/simple_dungeon,20", "minecraft:chests/bastion_treasure,25", "minecraft:chests/woodland_mansion,15", "minecraft:chests/nether_bridge,0", "minecraft:chests/underwater_ruin_big,0", "minecraft:chests/underwater_ruin_small,0", "minecraft:chests/ancient_city,4", "quark:misc/monster_box,5", "betterarcheology:archeology/chest_jungle_temple_treasure,30", "betterarcheology:archeology/chest_catacombs_library,30", "betterarcheology:archeology/chest_light_temple_book,30", "betterstrongholds:chests/grand_library,30", "betterstrongholds:chests/library_md,30"]
 		"Item Quality" = 2
 		"Normal Upgrade Cost" = 10
 		"Limit Break Upgrade Cost" = 30
@@ -363,7 +365,7 @@
 		"Deepslate Tweak" = true
 		"Deepslate Tweak Needs Haste2" = true
 		#Master Librarians will offer to exchange Ancient Tomes, provided you give them a max-level Enchanted Book of the Tome's enchantment too.
-		"Librarians Exchange Ancient Tomes" = true
+		"Librarians Exchange Ancient Tomes" = false
 		#Applying a tome will also randomly curse your item
 		"Curse Gear" = false
 		#Allows combining tomes with normal books
@@ -499,7 +501,7 @@
 	"Campfires Boost Elytra" = true
 	"Compasses Work Everywhere" = true
 	"Coral On Cactus" = true
-	"Diamond Repair" = true
+	"Diamond Repair" = false
 	"Double Door Opening" = true
 	"Dragon Scales" = true
 	"Dyeable Item Frames" = true
@@ -509,7 +511,7 @@
 	"Gold Tools Have Fortune" = false
 	"Grab Chickens" = false
 	"Hoe Harvesting" = true
-	"Horses Swim" = true
+	"Horses Swim" = false
 	"Improved Sponges" = true
 	"Lock Rotation" = true
 	"Map Washing" = true
@@ -530,7 +532,7 @@
 	"Snow Golem Player Heads" = true
 	"Utility Recipes" = true
 	"Vexes Die With Their Masters" = false
-	"Villagers Follow Emeralds" = true
+	"Villagers Follow Emeralds" = false
 	"Zombie Villagers On Normal" = true
 
 	[tweaks.automatic_recipe_unlock]
@@ -1569,7 +1571,7 @@
 		"Attribute Tooltips" = true
 		"Food Tooltips" = false
 		"Shulker Tooltips" = false
-		"Map Tooltips" = true
+		"Map Tooltips" = false
 		"Enchanting Tooltips" = true
 		"Fuel Time Tooltips" = false
 		"Shulker Box Use Colors" = false
