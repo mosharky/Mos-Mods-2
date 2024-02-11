@@ -929,6 +929,10 @@ file = "config/domestication-innovation.toml"
 hash = "8df5ed720b6f4e65dde564ca501ac9a4ba095684361ea90aff6110a905561d00"
 
 [[files]]
+file = "config/dragonfight.json"
+hash = "ba18abdd5cbbd61bdc02c070c027201f8053ed32fe8ba3626ce441f44f28e06c"
+
+[[files]]
 file = "config/dramaticdoors-common.toml"
 hash = "c51a452cbafa031fee785504c58298c1cc29725312e7528c0c22a2854ae6853e"
 
