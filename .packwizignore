@@ -18,6 +18,11 @@ LICENSE
 /mods/logprot*
 /mods/dragonfight*
 /mods/packwizsu*
+/mods/Chunky*
+/mods/ftbbackups2*
+/mods/mc2discord*
+/mods/polylib*
+/mods/structureessentials*
 
 # config
 /config/jei/world/
