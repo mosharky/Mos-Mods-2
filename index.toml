@@ -1774,7 +1774,7 @@ hash = "19a159138f9b8f8cf015f8cade4bf15e4423b20fd7356800b402f6f14a2cccb0"
 
 [[files]]
 file = "defaultconfigs/aether-server.toml"
-hash = "1cb0ab9735c095dfbcadc73e5821714812b7e9023b28482d772f79fae5c28d35"
+hash = "32ab9712f1a4b90beaf036b72eeb4b8534f2dde803ccf23793de773149653885"
 
 [[files]]
 file = "defaultconfigs/backpacked-server.toml"
@@ -1789,6 +1789,10 @@ file = "defaultconfigs/betterarcheology-server.toml"
 hash = "7fbff0c57c9fdc930c27777ffe3f330b1490ffd9339b6642ac264c413a679b0b"
 
 [[files]]
+file = "defaultconfigs/cofh_core-server.toml"
+hash = "936cc6909e95faefe50b6aa94199e3c988fa027688f7860ac6040bcd0dcdf735"
+
+[[files]]
 file = "defaultconfigs/corpse-server.toml"
 hash = "09b9e4c7add97afd272feb9f7595228fca449d99d0996589da1b29c31c79d96a"
 
@@ -1801,12 +1805,16 @@ file = "defaultconfigs/create_enchantment_industry-server.toml"
 hash = "16c2b6fbd8da6f0ec44a6b3c81cb95ab85805031c94f7f2c60aab3073006a2cb"
 
 [[files]]
+file = "defaultconfigs/createbigcannons-server.toml"
+hash = "8136292c6d4ccd94c3ba3291d04b192e170203080dfa39c96c03bd6d25d1dfc2"
+
+[[files]]
 file = "defaultconfigs/curios-server.toml"
 hash = "3ffa410ff870c42c424bed474fb0cdedbcc2fb577b38140e7cd923487ce5e318"
 
 [[files]]
-file = "defaultconfigs/dragonmounts-server.toml"
-hash = "8fa7d668fff7142489b3fea27c551f173fe49c6666a7eabcbb27b038aab9fcd7"
+file = "defaultconfigs/ensorcellation-server.toml"
+hash = "98cb04e89e1ce9fe2cda75af72d1b43d0f9b4a35aede1c844e9c76d93fe5a456"
 
 [[files]]
 file = "defaultconfigs/forge-server.toml"
@@ -1833,8 +1841,20 @@ file = "defaultconfigs/jumpboat-server.toml"
 hash = "bbc6cab52c01377529d6a0cbf029e7f3c0d78af1f2d8b10c539ea1061ed3f7f7"
 
 [[files]]
+file = "defaultconfigs/lost_aether_content-server.toml"
+hash = "cfd9469323a5ce674215666b732143f6dda256da7e331bb7381f7e06491b21ca"
+
+[[files]]
+file = "defaultconfigs/pehkui-server.toml"
+hash = "87e9fe178e9a06363832fe94aad3ed154846cd5de72aac4f40fa11dd9583fc71"
+
+[[files]]
 file = "defaultconfigs/railways-server.toml"
 hash = "2d5728097897e6f85420be2014a99a92fcd23043c5c82d6d53b8dabcabcd3a3c"
+
+[[files]]
+file = "defaultconfigs/ritchiesprojectilelib-server.toml"
+hash = "799821cb8e17dc622db4a9f7c8292cc4b70c7742a3bdb66504eef2f31ca00a0a"
 
 [[files]]
 file = "defaultconfigs/sculkhornid-server.toml"
