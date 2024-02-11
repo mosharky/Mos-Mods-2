@@ -19,3 +19,8 @@
 - ++num1++: **Pull 1 Stack From Nearby Inventories** - Hover over an item and press this key to pull a stack of it from nearby chests
 - ++num7++: **Toggle Overlay** - Show/hide the block display widget at the top of your screen
 - ++num8++: **Configure Overlay** - Configure the block display widget at the top of your screen
+- In your inventory's purse:
+    - ++shift+left-button++-click the purse to deposit all coins in your inventory
+    - ++ctrl+left-button++-click the purse's withdraw button (on the bottom) to put all coins in your inventory
+    - ++shift+left-button++-click the purse's arrow buttons to increase the stack by 10
+    - ++right-button++-click coins in held in your hand to deposit them to your purse
