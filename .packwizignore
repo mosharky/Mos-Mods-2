@@ -10,6 +10,14 @@ LICENSE
 /mods/.connector/
 /mods/.index/
 /mods/probejs*
+# server-side mods
+/mods/cupboard*
+/mods/dynview*
+/mods/ftb-essentials*
+/mods/ftb-library*
+/mods/logprot*
+/mods/dragonfight*
+/mods/packwizsu*
 
 # config
 /config/jei/world/
