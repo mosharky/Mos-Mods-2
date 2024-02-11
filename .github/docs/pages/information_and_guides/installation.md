@@ -3,7 +3,7 @@
 1. Download [Prism Launcher](https://prismlauncher.org/download/?from=button) 
 2. Run the Prism Launcher setup file.
 3. During setup, ensure that you select Java 17.
-      - If you don't see Java 17 as an option, I'd recommend you install [Temurin/Java 17 here](https://adoptium.net/temurin/releases/?version=17). Be sure to select the correct version for your system.
+      - If you don't see Java 17 as an option, I'd recommend you install [Temurin/Java 17 here](https://adoptium.net/temurin/releases/?version=17&package=jre). Be sure to select the correct version for your system.
 4. After setup, click on **"Add Instance"** on the top left.
 5. On the left, select **"Import"** and copy-paste this link:
     ```
