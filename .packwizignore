@@ -39,6 +39,7 @@ LICENSE
 /config/embeddium-fingerprint.json
 /config/ftbbackups2.json
 /config/dynview-common.toml
+/config/mc2discord.toml
 
 # root folders
 /not-enough-crashes/

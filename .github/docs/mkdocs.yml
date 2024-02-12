@@ -13,6 +13,7 @@ nav:
     - Modlist: 'information_and_guides/modlist.md'
   - 📜Changelogs:
     - v2.2.0: 'changelogs/v2.2.0.md'
+    - v2.2.1: 'changelogs/v2.2.1.md'
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -24,7 +25,7 @@ markdown_extensions:
 theme:
   name: material
   logo: https://raw.githubusercontent.com/mosharky/Mos-Mods-2/main/.github/docs/assets/logo.png
-  favicon: https://raw.githubusercontent.com/mosharky/Mos-Mods-2/main/.github/docs/assets/logo.png
+  favicon: https://raw.githubusercontent.com/mosharky/Mos-Mods-2/main/.github/docs/assets/logo.ico
   highlightjs: true
   features:
     - navigation.tabs

@@ -10,6 +10,7 @@
 /config/fabric/indigo-renderer.properties
 /config/spark/activity.json
 /config/embeddium-fingerprint.json
+/config/mc2discord.toml
 # /kubejs/config/client.properties
 # /kubejs/config/common.properties
 
