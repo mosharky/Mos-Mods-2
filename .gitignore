@@ -5,6 +5,7 @@
 !config/inventoryprofilesnext/inventoryprofiles.json
 /config/voicechat/username-cache.json
 /config/voicechat-volumes.properties
+/config/voicechat-server.properties
 /config/Obscuria/Data/
 /config/indium-renderer.properties
 /config/fabric/indigo-renderer.properties
