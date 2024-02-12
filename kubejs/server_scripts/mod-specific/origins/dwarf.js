@@ -3,11 +3,10 @@ ServerEvents.highPriorityData(e => {
     // init
     e.addJson('kubejs:origins/cave_dwarf.json', {
         name: 'Cave Dwarf',
-        description: 'A . Made exclusively for mo_mo.',
-        icon: 'minecraft:golden_pickaxe', //TODO: replace with embers ingot?
+        description: 'An engineer of age; a tinkerer of grandiose; a smith of greatness: A Cave Dwarf. Made exclusively for mo_mo.',
+        icon: 'embers:clockwork_pickaxe',
         powers: [
             'kubejs:cave_dwarf/darkvision',
-            'kubejs:cave_dwarf/darkvision_less_colour',
             'kubejs:cave_dwarf/cave_dweller',
             'kubejs:cave_dwarf/ursus_family',
             'kubejs:cave_dwarf/short_legged',
@@ -26,19 +25,40 @@ ServerEvents.highPriorityData(e => {
     e.addJson('kubejs:powers/cave_dwarf/darkvision.json', {
         name: 'Darkvision',
         description: 'You have superior vision in darkness, but you struggle to discern colour.',
-        type: 'origins:toggle_night_vision',
-        key: { key: 'key.origins.ternary_active' }
+        type: 'origins:active_self',
+        key: { key: 'key.origins.tertiary_active' },
+        entity_action: {
+            type: 'origins:if_else',
+            condition: {
+                type: 'origins:status_effect',
+                effect: 'minecraft:night_vision'
+            },
+            if_action: {
+                type: 'origins:clear_effect',
+                effect: 'minecraft:night_vision',
+            },
+            else_action: {
+                type: 'origins:apply_effect',
+                effect: {
+                    effect: 'minecraft:night_vision',
+                    duration: 2147483646,
+                    is_ambient: true,
+                    show_particles: false,
+                    show_icon: false
+                }
+            }
+        },
     })
-    e.addJson('kubejs:powers/cave_dwarf/darkvision_less_colour', {
-        type: 'origins:shader',
-        shader: 'minecraft:shaders/post/desaturate.json',
-        hidden: true,
-        toggleable: true,
-        condition: {
-            type: 'origins:power_active',
-            power: 'kubejs:cave_dwarf/darkvision'
-        }
-    })
+    // e.addJson('kubejs:powers/cave_dwarf/darkvision_less_colour', {
+    //     type: 'origins:shader',
+    //     shader: 'minecraft:shaders/post/desaturate.json',
+    //     hidden: true,
+    //     toggleable: true,
+    //     condition: {
+    //         type: 'origins:power_active',
+    //         power: 'kubejs:cave_dwarf/darkvision'
+    //     }
+    // })
 
 
     // cave dweller
@@ -111,13 +131,13 @@ ServerEvents.highPriorityData(e => {
         }],
         description: 'You are one with the grizzly bears; they won\'t show aggression. You can heal nearby owned grizzly bears.',
         type: 'origins:multiple',
-        // bear_ignore: {
-        //     type: 'apugli:mobs_ignore',
-        //     mob_condition: {
-        //         type: 'origins:entity_type',
-        //         entity_type: 'minecraft:wolf', // TODO: switch with bear and test
-        //     }
-        // },
+        bear_ignore: {
+            type: 'apugli:mobs_ignore',
+            mob_condition: {
+                type: 'origins:entity_type',
+                entity_type: 'alexsmobs:grizzly_bear', // TODO: switch with bear and test
+            }
+        },
         bear_heal: {
             type: 'origins:active_self',
             entity_action: {
@@ -164,7 +184,7 @@ ServerEvents.highPriorityData(e => {
                             type: 'origins:target_condition',
                             condition: {
                                 type: 'origins:entity_type',
-                                entity_type: 'minecraft:wolf' // TODO: switch with bear
+                                entity_type: 'alexsmobs:grizzly_bear'
                             }
                         }
                     ]
@@ -526,19 +546,16 @@ ServerEvents.highPriorityData(e => {
                         type: 'origins:dimension',
                         dimension: 'minecraft:nether'
                     },
-                    // TODO: add aether
-                    /*
                     {
                         type: 'origins:and',
                         conditions: [
                             { type: 'origins:exposed_to_sun' },
                             {
                                 type: 'origins:dimension',
-                                dimension: 'aether:aether'
+                                dimension: 'aether:the_aether'
                             }
                         ]
                     },
-                    */
                 ]
             }
         },
@@ -569,19 +586,16 @@ ServerEvents.highPriorityData(e => {
                         type: 'origins:dimension',
                         dimension: 'minecraft:nether'
                     },
-                    // TODO: add aether
-                    /*
                     {
                         type: 'origins:and',
                         conditions: [
                             { type: 'origins:exposed_to_sun' },
                             {
                                 type: 'origins:dimension',
-                                dimension: 'aether:aether'
+                                dimension: 'aether:the_aether'
                             }
                         ]
                     },
-                    */
                 ]
             }
         },

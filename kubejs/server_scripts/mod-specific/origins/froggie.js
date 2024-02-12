@@ -336,7 +336,7 @@ ServerEvents.highPriorityData(e => {
             interval: 600,
             onset_delay: 1,
             damage: 1,
-            damage_type: 'minecraft:inWall',
+            damage_type: 'inWall',
             condition: {
                 type: 'origins:resource',
                 resource: '*:*_resource',

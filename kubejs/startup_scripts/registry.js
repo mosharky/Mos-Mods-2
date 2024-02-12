@@ -41,6 +41,15 @@ StartupEvents.registry('fluid', e => {
 })
 
 
+// origins sounds
+StartupEvents.registry('sound_event', e => {
+    e.create('kubejs:pyke_harpoon')
+    e.create('kubejs:ghostwater_dive_0')
+    e.create('kubejs:ghostwater_dive_1')
+    e.create('kubejs:ghostwater_dive_2')
+})
+
+
 // item modification
 ItemEvents.modification(e => {
     global.ironShulkerBoxes.forEach(box => {

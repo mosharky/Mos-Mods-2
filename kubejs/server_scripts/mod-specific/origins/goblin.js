@@ -19,7 +19,29 @@ ServerEvents.highPriorityData(e => {
         description: 'You can see clearly and deal more damage in the dark.',
         type: 'origins:multiple',
         nightvision: {
-            type: 'origins:toggle_night_vision'
+            type: 'origins:active_self',
+            key: { key: 'key.origins.primary_active' },
+            entity_action: {
+                type: 'origins:if_else',
+                condition: {
+                    type: 'origins:status_effect',
+                    effect: 'minecraft:night_vision'
+                },
+                if_action: {
+                    type: 'origins:clear_effect',
+                    effect: 'minecraft:night_vision',
+                },
+                else_action: {
+                    type: 'origins:apply_effect',
+                    effect: {
+                        effect: 'minecraft:night_vision',
+                        duration: 2147483646,
+                        is_ambient: true,
+                        show_particles: false,
+                        show_icon: false
+                    }
+                }
+            },
         },
         night_damage: {
             type: 'origins:stacking_status_effect',
@@ -46,14 +68,14 @@ ServerEvents.highPriorityData(e => {
         name: 'Gluttonous',
         description: 'You can squeeze out extra loot out from defeated foes. Food will always be edible even if you\'re full, but your hunger is harder to sate.',
         type: 'origins:multiple',
-        // looting: {
-        //     type: 'apugli:modify_enchantment_level',
-        //     enchantment: 'minecraft:looting',
-        //     modifier: {
-        //         operation: 'addition',
-        //         value: 1
-        //     }
-        // },
+        looting: {
+            type: 'apugli:modify_enchantment_level',
+            enchantment: 'minecraft:looting',
+            modifier: {
+                operation: 'addition',
+                value: 1
+            }
+        },
         hunger: {
             type: 'origins:modify_food',
             always_edible: true,

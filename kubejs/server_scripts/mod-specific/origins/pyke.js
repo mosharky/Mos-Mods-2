@@ -89,34 +89,52 @@ ServerEvents.highPriorityData(e => {
             }
         },
         water_vision: {
-            type: 'origins:toggle_night_vision',
-            strength: 1,
-            condition: {
-                type: 'origins:submerged_in',
-                fluid: 'minecraft:water'
-            },
-            active_by_default: true,
-            key: {
-                key: 'key.origins.ternary_active',
-                continuous: false
+            type: 'origins:active_self',
+            key: { key: 'key.origins.tertiary_active' },
+            entity_action: {
+                type: 'origins:if_else',
+                condition: {
+                    type: 'origins:status_effect',
+                    effect: 'minecraft:night_vision'
+                },
+                if_action: {
+                    type: 'origins:clear_effect',
+                    effect: 'minecraft:night_vision',
+                },
+                else_action: {
+                    type: 'origins:apply_effect',
+                    effect: {
+                        effect: 'minecraft:night_vision',
+                        duration: 2147483646,
+                        is_ambient: true,
+                        show_particles: false,
+                        show_icon: false
+                    }
+                }
             },
         },
-        // aquatic_ignore: {
-        //     type: 'apugli:mobs_ignore',
-        //     mob_condition: {
-        //         type: 'origins:entity_group',
-        //         group: 'aquatic',
-        //     }
-        // },
-        // drowned_ignore: {
-        //     type: 'apugli:mobs_ignore',
-        //     mob_condition: {
-        //         type: 'origins:entity_type',
-        //         entity_type: 'minecraft:drowned',
-        //     }
-        // }
+        aquatic_ignore: {
+            type: 'apugli:mobs_ignore',
+            mob_condition: {
+                type: 'origins:entity_group',
+                group: 'aquatic',
+            }
+        },
+        drowned_ignore: {
+            type: 'apugli:mobs_ignore',
+            mob_condition: {
+                type: 'origins:entity_type',
+                entity_type: 'minecraft:drowned',
+            }
+        },
+        skelewag_ignore: {
+            type: 'apugli:mobs_ignore',
+            mob_condition: {
+                type: 'origins:entity_type',
+                entity_type: 'alexsmobs:skelewag',
+            }
+        },
     })
-
 
 
     // Phantasmal
@@ -489,16 +507,16 @@ ServerEvents.highPriorityData(e => {
                 compare_to: 7200
             }
         },
-        tier_2_shader: {
-            type: 'origins:shader',
-            shader: 'minecraft:shaders/post/desaturate.json',
-            condition: {
-                type: 'origins:resource',
-                resource: '*:*_tier_2_resource',
-                comparison: '==',
-                compare_to: 7200
-            }
-        },
+        // tier_2_shader: {
+        //     type: 'origins:shader',
+        //     shader: 'minecraft:shaders/post/desaturate.json',
+        //     condition: {
+        //         type: 'origins:resource',
+        //         resource: '*:*_tier_2_resource',
+        //         comparison: '==',
+        //         compare_to: 7200
+        //     }
+        // },
         tier_2_shaking: {
             type: 'origins:shaking',
             condition: {
