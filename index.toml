@@ -521,6 +521,10 @@ file = "config/appleskin-client.toml"
 hash = "e6609ffbea927ee6390b1317bb6f3abb3f31ee591ca5c1d5e748f5e625fefea1"
 
 [[files]]
+file = "config/apugli-client.toml"
+hash = "b6ea4713491e3ffb2b2b641c2d0676cddb6349069cac6d98070d5d9d7faaf6ed"
+
+[[files]]
 file = "config/armorstatues-client.toml"
 hash = "207ae1fd57fead9319de65259e7a8932336b953286cb475ed61d7f07bcbe331e"
 
@@ -785,6 +789,10 @@ file = "config/chunksending.json"
 hash = "4bb53cce5a363b4173052e66d609e2013b53c7a662de115e5ca59143fd3eab1b"
 
 [[files]]
+file = "config/chunky/config.json"
+hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
+
+[[files]]
 file = "config/citadel-common.toml"
 hash = "3fcd8013137a86c00953d4be1e56945b84b87594be722bbf3b3be8d752e2577f"
 
@@ -885,6 +893,10 @@ file = "config/cumulus_menus-client.toml"
 hash = "d59a0a8fe2dc2d311ce2a9ecc60d5cde50e3e2e0bebd3999420683e17419a992"
 
 [[files]]
+file = "config/cupboard.json"
+hash = "42bbabc1f3eacb0e7ac159aeb9fa8ca5b72a3bdc1de008ee8e65a632b23d8fe0"
+
+[[files]]
 file = "config/curios-client.toml"
 hash = "9c0985b85e67e704a3640d028186dc0b220fa69404b9555244add55eaf5d4794"
 
@@ -930,7 +942,7 @@ hash = "8df5ed720b6f4e65dde564ca501ac9a4ba095684361ea90aff6110a905561d00"
 
 [[files]]
 file = "config/dragonfight.json"
-hash = "ba18abdd5cbbd61bdc02c070c027201f8053ed32fe8ba3626ce441f44f28e06c"
+hash = "435d7cee8c981a974971a765b6545f8d70bd69d93ac1a39f9a19036f09f7d3dc"
 
 [[files]]
 file = "config/dramaticdoors-common.toml"
@@ -982,7 +994,7 @@ hash = "ea208bedfed2f122b05997b3af13b0d450e8a473914c1f0c089373166e0e5171"
 
 [[files]]
 file = "config/embeddium++.toml"
-hash = "7448c7cf99bf4add30c7e11e555deb43ee7352315eeaa430bcaf300dcc6c2842"
+hash = "3931ac78908110642599ca515d70986b8364a71a403f7f2a3640a1f6feb45b66"
 
 [[files]]
 file = "config/embeddium-mixins.properties"
@@ -990,7 +1002,7 @@ hash = "09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619"
 
 [[files]]
 file = "config/embeddium-options.json"
-hash = "fc5c4596ea20078938d36e811990359bf951a6588cd5e9be7735dcf7642c8f91"
+hash = "aef881c7fa6e0e234399f6dbaf34ebb7b0d4c08b1c0755bdc2b2af00f1cab4c3"
 
 [[files]]
 file = "config/embers-common.toml"
@@ -1042,7 +1054,7 @@ hash = "4d08298abbd6bb3f2a8d93cb8d58fb06106155169f2da58c09b87687c7269308"
 
 [[files]]
 file = "config/extrasounds-client.toml"
-hash = "474e41292def09b8591c3944df16358b4d33c8943f27799773432acd826a5f38"
+hash = "2461540c860759ab2f246a0f42100521a6580645bd7cabe991473b38eeeef0ff"
 
 [[files]]
 file = "config/farmersdelight-client.toml"
@@ -1385,6 +1397,10 @@ file = "config/lighty.config"
 hash = "1204b4d457c0b42490841b42ad0a9a08bb0ea73151181399b6c05b92af0ef9c9"
 
 [[files]]
+file = "config/logprot.json"
+hash = "ffc115e469b3dddab530c23f8b996142171220ed3ea80fb21a3f4a4db27d52dd"
+
+[[files]]
 file = "config/lootr-client.toml"
 hash = "bdba68cc47b3722ec0b8debe793eea47dc68b453dda9605593ac66a73c6eebda"
 
@@ -1474,7 +1490,7 @@ hash = "1988b86b1249cd3e48054df8c94f0225022dbc17689cc0fec2f0e0bde40709c8"
 
 [[files]]
 file = "config/origins-common.toml"
-hash = "7929c3cc5eb7d86a06cb4854852f9218b2ce5ef8f6069ba7e0963f10cbe06d13"
+hash = "2a228deb045f101dc64e88ea61dd4101c26c9f9c82f82a5588b9be62ef30b049"
 
 [[files]]
 file = "config/origins_server.json"
@@ -1613,6 +1629,10 @@ file = "config/serializationisbad.json"
 hash = "a7f5083dc6d5462e02ecf5237861df29e829aacaf3920388e4b9ce8036ba3834"
 
 [[files]]
+file = "config/sidebar_buttons.json"
+hash = "c15e8bc2e15de3248b51d2c7a582bb01a1235be123c24348c1393c6d9cefb137"
+
+[[files]]
 file = "config/sliceanddice-common.toml"
 hash = "6d15397086cbf7e666f295ba021b6c62158e4b6c0bc1f19ff637864894a64e5a"
 
@@ -1663,6 +1683,10 @@ hash = "8058ecb1b7e59f183db54b31fe49e2040bc222294a46ba5c7c82a172a7277354"
 [[files]]
 file = "config/structure_gel-common.toml"
 hash = "b4c337a5454114db3ea00138a5b173bd36a8c9c22c1baeb116aa089ae1c98fbc"
+
+[[files]]
+file = "config/structureessentials.json"
+hash = "34e14e20cd7ffa970d0bcdea197741519357ae7162f1f458d598da244ac19bea"
 
 [[files]]
 file = "config/styled-nicknames.json"
@@ -2041,6 +2065,38 @@ file = "kubejs/assets/ironshulkerbox/textures/model/yellow/shulker_yellow_iron.p
 hash = "8549bf4403a363a09d52db744040579b0ae2a18bfb9d50e0be77695bf80502c7"
 
 [[files]]
+file = "kubejs/assets/kubejs/sounds.json"
+hash = "7157debdb5763798dd4115ab0626f6df3a0464f30d30c9f8634c7ddc53f7372c"
+
+[[files]]
+file = "kubejs/assets/kubejs/sounds/ghostwater_dive_0.ogg"
+hash = "4fdc2591582e34ab73ab6d6795dd7ff1ce20fbb1e154e735280a40c0e69facfe"
+
+[[files]]
+file = "kubejs/assets/kubejs/sounds/ghostwater_dive_1.ogg"
+hash = "e1e067d3fba5629dfacdd800013f9cb593bfdc1cbee6dfed48071863831e9618"
+
+[[files]]
+file = "kubejs/assets/kubejs/sounds/ghostwater_dive_2.ogg"
+hash = "f18e4f280968a0f47c809336a7a7ddaaab5d44b487993b1b2518df0cf9fe3da4"
+
+[[files]]
+file = "kubejs/assets/kubejs/sounds/pyke_harpoon.ogg"
+hash = "cd6ce2dc6dd00b8371fcb5a6a7ff3dd344f66fa9f6a10f1212400aa81661d255"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/gui/badge/anvil.png"
+hash = "3ee594b5cc56a65a41616c407603ac5a78441358e51059ec115c637ff02c6862"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/gui/badge/light_deterioration.png"
+hash = "8eea6550b37c3aabe1f81349e2c14c4161f971b8da8e6e6fe9f8b33009035cf1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/gui/resource_bar.png"
+hash = "00fe3f415305dd3117438a75d577c2d78bd1a0cc1cd9637c78c89670c00363ff"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/crushed_raw_calorite.png"
 hash = "326d7fdaa89d1ef1bbe98996d44f7556e273d513692e18f9babe1942f665d837"
 
@@ -2186,7 +2242,7 @@ hash = "72b170a67ad2d273d4dda29fcc364d7eb4ff3ebc64e67cd9ef653ee830f9722d"
 
 [[files]]
 file = "kubejs/client_scripts/client.js"
-hash = "5d5363a11b1533f7533758fdce235206a0bd892f152f5b1b61fa52e4d3e52f15"
+hash = "2fa1e7c689fb2c31b3c372467a4a1f9b23026a3e9a738fd629c6e44e7832d9f8"
 
 [[files]]
 file = "kubejs/client_scripts/rename.js"
@@ -2825,28 +2881,32 @@ file = "kubejs/server_scripts/mod-specific/origins/_layer.js"
 hash = "b225db9dcdf220587863651c57ffa93fb0a355e8c1ea7e74117fa791df7185d9"
 
 [[files]]
+file = "kubejs/server_scripts/mod-specific/origins/_overrides.js"
+hash = "0b389e9a5e293fdaf025af569d3cfdd77def51d399127c5407dd0f8b17afed0c"
+
+[[files]]
 file = "kubejs/server_scripts/mod-specific/origins/dwarf.js"
-hash = "0a37e19a45403398597bc1a48a1a52cee6f60380f0e896168efad5ce67cc92c5"
+hash = "0c1a14c160b44700ba89222b4992ec670692f6e8dab275b2e67a966dc527d756"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/origins/froggie.js"
-hash = "6b3831c79309e928791643ba1d0c12cdbff426bc06b2b6bddfb45fbebbb22a05"
+hash = "4ac27e12f154dd471b003992c31fe25ce8ecd53cee9c10a3b45622f5fe5ea43e"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/origins/goblin.js"
-hash = "d576b6ded342643f1dabb023b0d2b6ec0cd2985e3b7eff16b6e59e09365d402f"
+hash = "5a16d498b8926d7b90eede984f1c9580c5b32bca672c5a3e6f3db8485fa8427c"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/origins/pyke.js"
-hash = "938f85426ad8d35ca89c302d23254cca0939bf472aef1586458c1099f2d1ea16"
+hash = "197aef085c1e7ae30e71be914312aacc7949f77241fb87eddbaefc032e872fc3"
 
 [[files]]
 file = "kubejs/server_scripts/player.js"
-hash = "2125ce258b711b41dfe72c44a01a565aee58a5a3bf0f60c153e9dc960a3d6807"
+hash = "96431600068e20b021a0d1ba488671b5d587db99a05915c51041c36bdd884f64"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "4ee31e5bb5fceafb383b16a060dddd6f0b9f30268e9920f62d007152179b1a12"
+hash = "45726cb57e1888cecbfa1235bdeb594b9e9010c9525022ec29a10788717b352d"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
@@ -2854,7 +2914,7 @@ hash = "2935b2ad6b13d97dc61e4f85cd0c231e18181852573dead7b2573cb42a0b392a"
 
 [[files]]
 file = "kubejs/server_scripts/replacing.js"
-hash = "fa44a1b780ce5e76e6357ff518b2978339362843fe8c7f25379d5ce00bb2cbd6"
+hash = "7ff67ec024c25c8e54c69a3a1a453175a18b95569e8a23a8e2faf62f3fe750bf"
 
 [[files]]
 file = "kubejs/server_scripts/shaped_recipes.js"
@@ -2862,7 +2922,7 @@ hash = "06c95ff5d1258901751daad21245629ac527462d58e2066dc8e356e73fd7595f"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
-hash = "000418b02d4d0ae23c855d06102a38ebb6fbb97f5e22b0146e7f6ef556bdcb25"
+hash = "2e196fcd59c7787db06deb8895b3d884d867c1a3701a894e942890ef5b9c0b44"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen.js"
@@ -2870,11 +2930,11 @@ hash = "172f2dcc824eab36c7d68f05333a7729c05bb49121b2fbc17c667ede2c9942b6"
 
 [[files]]
 file = "kubejs/startup_scripts/registry.js"
-hash = "9f7d833f53f7313f8772c1fe6a515bdcaa6eeb0c9f190297857339bfcd65df08"
+hash = "f387884d0641449ff351964231767e5d23428390f9a9675718e10772ea920c7a"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "f901d593d38c88952f0b280e118727c0494d8b404cebfe0b08a357ffcb299881"
+hash = "020bdf40ab0d83806f4ad4d59cd31fb66f7f954121ca770c88bbbdde825823e2"
 
 [[files]]
 file = "mods/(Forge)SculkHorn-1.20.x-1.4.5.jar"
@@ -2887,6 +2947,10 @@ hash = "575a4a8e00f982c064d54bb3e73e5cda2d14414de054a471a3daf3f58bdf560a"
 [[files]]
 file = "mods/AdvJS-2001forge-2.8.0.jar"
 hash = "8d77b437d64311a4b8656196b99fbf63a29f2b02597cbb5882db2f5dbb6cce7f"
+
+[[files]]
+file = "mods/Apugli-2.9.1+1.20.1-forge.jar"
+hash = "87da87cd3b29246474962472d46d631031d75b02337ae34a44620509546fba00"
 
 [[files]]
 file = "mods/ArmorStatues-v8.0.5-1.20.1-Forge.jar"
@@ -3083,10 +3147,6 @@ hash = "28e05589c9e4021d9504c9eea387ed4e80adcdcd0626a9623a53754cfa69f7bf"
 [[files]]
 file = "mods/NoChatReports-FORGE-1.20.1-v2.2.2.jar"
 hash = "ef7fa5096dfd492c3d3ae7228888ca4b92ce07d9b8e302297ceb2ceb1f8d238c"
-
-[[files]]
-file = "mods/Origins-1.20.1-1.10.0.jar"
-hash = "c022f72118f6fc26ce2888ba4d09f11b303b1c586a4fa565e7292ebf3b838adb"
 
 [[files]]
 file = "mods/OverflowingBars-v8.0.0-1.20.1-Forge.jar"
@@ -3743,6 +3803,10 @@ hash = "a82e51c76eb0333975bbe8f0cc65b7b1880c93ab826364751f7b0ebe71a74c85"
 [[files]]
 file = "mods/obscure_api-15.jar"
 hash = "dd31231b626b894d89747f59d090887b8a956313f1e1f07e5a57b5086ebba301"
+
+[[files]]
+file = "mods/origins-forge-1.20.1-1.10.0.5-all.jar"
+hash = "fa87bab0c57d41c64c2860cd1e3d13521cdde66f32a18d15b1d9b69cb097cf38"
 
 [[files]]
 file = "mods/overweightfarming-1.20.1-2.1.0-forge.jar"
