@@ -31,6 +31,8 @@ LICENSE
 /mods/durabilitytooltip*
 /mods/lighty*
 /mods/starlight*
+/mods/embeddiumplus*
+/mods/textrues_embeddium_options*
 
 # config
 /config/jei/world/

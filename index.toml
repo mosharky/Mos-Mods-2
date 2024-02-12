@@ -2893,10 +2893,6 @@ file = "mods/embeddium-0.3.1+mc1.20.1.jar"
 hash = "65d13fa8059abf5d37c415fc20b25c901d0bcf4cc23b0bed2843604091ac508a"
 
 [[files]]
-file = "mods/embeddiumplus-1.20.1-v1.2.4.jar"
-hash = "24c3e275eb2627e6f60ea399c8ffb5f02bda85b4e81e4286dd119d8e72d08277"
-
-[[files]]
 file = "mods/embersrekindled-1.20.1-1.1.1.jar"
 hash = "d696e33b8fac9a3dbc29c1711df52b5a497a8f7e5a6489b84afff16adbf477e9"
 
@@ -3263,10 +3259,6 @@ hash = "89cfa37fc58b0bbb7a4b4f0b464631b852c6292ae854f326b05794475da389f9"
 [[files]]
 file = "mods/tact-1.0.9+1.20.1.jar"
 hash = "46d49091c02b138388e6f694d6e51308815e8df6913814f21fb99b2b4a01319f"
-
-[[files]]
-file = "mods/textrues_embeddium_options-0.1.5+mc1.20.1.jar"
-hash = "37331ace374d27ee8e592b7292b624a14035a80993b76a412521770468abc3d2"
 
 [[files]]
 file = "mods/the-conjurer-1.20.1-1.1.6.jar"
