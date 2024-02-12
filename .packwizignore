@@ -41,11 +41,14 @@ LICENSE
 !config/inventoryprofilesnext/inventoryprofiles.json
 /config/voicechat/username-cache.json
 /config/voicechat-volumes.properties
+/config/voicechat-server.properties
 /config/Obscuria/Data/
 /config/indium-renderer.properties
 /config/xaerominimap_entities.json
 /config/fabric/indigo-renderer.properties
 /config/spark/activity.json
+/config/embeddium-fingerprint.json
+/config/mc2discord.toml
 
 # root folders
 /not-enough-crashes/

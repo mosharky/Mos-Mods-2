@@ -28,7 +28,7 @@ ServerEvents.recipes(e => {
     e.custom({
         type: 'rats:chef',
         count: 1,
-        ingredient: Ingredient.of('rats:assorted_vegetables').toJson(),
+        ingredient: Ingredient.of('overweight_farming:vegetable_compost').toJson(),
         result: 'farmersdelight:ratatouille'
     }).id('rats:chef/confit_byaldi')
     e.custom({

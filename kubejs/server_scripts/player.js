@@ -101,11 +101,11 @@ if (Platform.isLoaded('ftbessentials')) {
     EntityEvents.death(event => {
         const entity = event.entity
         if (!entity.isPlayer()) return
-        let FTBPlayerData = $FBTEssentials.getOrCreate(entity.getProfile()).get()
+        let FTBEPlayerData = $FTBEssentials.getOrCreate(entity.getProfile()).get()
         // delay because death teleports take a bit to save
         event.server.scheduleInTicks(40, () => {
             // remove death teleport pos from teleportHistory 
-            FTBPlayerData.popTeleportHistory()
+            FTBEPlayerData.popTeleportHistory()
         })
     })
 }

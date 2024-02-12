@@ -1,6 +1,5 @@
 // this doesn't support regex apparently
 JEIEvents.addItems(e => {
-    e.add('minecraft:bundle')
     let createModItems = Ingredient.of('@create').getItemIds().toArray()
     createModItems = global.filterArray(createModItems, /create:crushed_raw_(tin|quicksilver|osmium|aluminum|nickel|platinum|uranium)/)
     createModItems = global.filterArray(createModItems, /create:(copper_backtank_placeable|netherite_backtank_placeable|refined_radiance|chromatic_compound|shadow_steel.*)/)
@@ -19,6 +18,16 @@ JEIEvents.addItems(e => {
     e.add(createdecoItems)
 
     e.add(Ingredient.of('@create_enchantment_industry').getItemIds().toArray())
+
+    e.add([
+        'minecraft:bundle',
+        'endersdelight:chorus_juice',
+        'endersdelight:chorus_stew',
+        'endersdelight:ender_paella',
+        'endersdelight:endermite_stew',
+        'endersdelight:pearl_pasta',
+        'endersdelight:twisted_cereal',
+    ])
 })
 
 

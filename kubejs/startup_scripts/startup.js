@@ -48,7 +48,9 @@ global.fullRemovals = [
     /regions_unexplored:.*painted.*/,
     'aquamirae:oxygen_tank',
     'endersdelight:chorus_crate',
-    'createbigcannons:steel_scrap'
+    'createbigcannons:steel_scrap',
+    'overweight_farming:melon_juice',
+    'rats:assorted_vegetables',
 ]
 
 

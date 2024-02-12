@@ -91,3 +91,51 @@
 		"origins:like_air" = true
 		enabled = true
 
+	[origins."kubejs:goblin"]
+		enabled = true
+		"kubejs:goblin/nocturnal" = true
+		"kubejs:goblin/gluttonous" = true
+		"kubejs:goblin/loot_n_scoot" = true
+		"kubejs:goblin/petite" = true
+
+	[origins."kubejs:pyke"]
+		enabled = true
+		"kubejs:pyke/call_of_the_deep" = true
+		"kubejs:pyke/soggy_strength" = true
+		"kubejs:pyke/bone_skewer" = true
+		"kubejs:pyke/ghostwater_dive" = true
+		"kubejs:pyke/bloodthirst" = true
+		"origins:carnivore" = true
+		"kubejs:pyke/insomniac" = true
+		"kubejs:pyke/phantasmal" = true
+		"origins:like_water" = true
+		"kubejs:pyke/mount" = true
+
+	[origins."kubejs:froggie"]
+		enabled = true
+		"kubejs:froggie/anuras_ascension" = true
+		"kubejs:froggie/ponds_blessing" = true
+		"kubejs:froggie/pondering" = true
+		"kubejs:froggie/pond_lurkers_favour" = true
+		"kubejs:froggie/curse_of_squishy" = true
+		"kubejs:froggie/pond_mothers_lament" = true
+
+	[origins."kubejs:cave_dwarf"]
+		enabled = true
+		"kubejs:cave_dwarf/darkvision" = true
+		"kubejs:cave_dwarf/darkvision_less_colour" = true
+		"kubejs:cave_dwarf/cave_dweller" = true
+		"kubejs:cave_dwarf/ursus_family" = true
+		"kubejs:cave_dwarf/short_legged" = true
+		"kubejs:cave_dwarf/poison_resistance" = true
+		"kubejs:cave_dwarf/dwarven_smithing" = true
+		"kubejs:cave_dwarf/fear_of_the_deep" = true
+		"kubejs:cave_dwarf/light_deterioration" = true
+		"kubejs:cave_dwarf/miners_cuisine" = true
+		"kubejs:cave_dwarf/grand_equipment" = true
+
+	[origins."kubejs:debug"]
+		enabled = true
+		"kubejs:debug/shader1" = true
+		"kubejs:debug/shader1_toggle" = true
+

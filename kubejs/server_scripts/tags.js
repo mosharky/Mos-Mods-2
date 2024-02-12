@@ -75,40 +75,6 @@ ServerEvents.tags('item', e => {
         /aether:(valkyrie|gravitite)_(helmet|chestplate|leggings|boots|lance|axe|sword|pickaxe|shovel|hoe)/,
         /cataclysm:(bulwark_of_the_flame|the_incinerator|gauntlet_of_guard|gauntlent_of_bulwark|meat_shredder|void_forge|tidal_claws|infernal_forge|monstrous_helm)/,
     ])
-
-    e.add('origins:meat', [
-        /farmersdelight:(chicken_cuts|cooked_chicken_cuts|minced_beef|beef_patty|bacon|cooked_bacon|mutton_chops|cooked_mutton_chops|ham|smoked_ham)/,
-        'crabbersdelight:fish_stick',
-        '#crabbersdelight:raw_seafood',
-        '#crabbersdelight:cooked_seafood',
-        'crabbersdelight:cooked_tropical_fish_slice',
-        '#forge:raw_fishes',
-        '#forge:cooked_fishes',
-        '#endersdelight:shulker_loot',
-        '#miners_delight:bat_wing',
-        'miners_delight:bat_soup',
-        '#miners_delight:insect_meat',
-        'miners_delight:insect_stew',
-        'miners_delight:seasoned_arthropods',
-        '#minecraft:fishes',
-        'nethersdelight:hoglin_loin',
-        'nethersdelight:hoglin_sirloin',
-        'nethersdelight:hoglin_ear',
-        'nethersdelight:strider_slice',
-        'nethersdelight:ground_strider',
-        'alexsmobs:cooked_kangaroo_meat',
-        'alexsmobs:kangaroo_meat',
-        '#alexscaves:raw_meats',
-        'alexscaves:cooked_trilocaris_tail',
-        'alexscaves:mussel',
-        'alexscaves:cooked_mussel',
-        'rats:raw_rat',
-        'rats:cooked_rat',
-        'deep_aether:raw_quail',
-        'deep_aether:cooked_quail',
-        'deep_aether:raw_aerglow_fish',
-        'deep_aether:cooked_aerglow_fish',
-    ])
 })
 
 
@@ -165,6 +131,7 @@ ServerEvents.tags('entity_type', e => {
         'iceandfire:myrmex_queen',
         'iceandfire:hydra',
         'conjurer_illager:conjurer',
+        /mutantmonsters:mutant_(creeper|enderman|skeleton|zombie)/
     ])
     e.add('ad_astra:can_survive_extreme_cold', '#forge:bosses')
     e.add('ad_astra:can_survive_in_space', '#forge:bosses')

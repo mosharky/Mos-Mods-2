@@ -11,6 +11,7 @@ ServerEvents.recipes(e => {
     e.replaceInput({}, 'rats:block_of_nether_cheese', 'brewinandchewin:scarlet_cheese_wheel')
     // rats
     e.replaceInput({ not: { id: 'rats:upgrades/chicken_mount_upgrade' } }, 'rats:feathery_wing', 'alexsmobs:cockroach_wing')
+    e.replaceInput({}, 'rats:assorted_vegetables', 'overweight_farming:vegetable_compost')
     // other
     e.replaceInput({}, 'minecraft:milk_bucket', '#forge:milk')
     e.replaceInput({ not: { id: /farmersdelight:fried_egg.*/ } }, 'minecraft:egg', '#forge:eggs')
