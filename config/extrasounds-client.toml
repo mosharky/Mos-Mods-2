@@ -24,7 +24,7 @@
 	hotbar = 1.0
 	#Typing Sounds
 	#Range: 0.0 ~ 2.0
-	typing = 1.0
+	typing = 0.5
 	#Item drop Sounds
 	item_drop = false
 
