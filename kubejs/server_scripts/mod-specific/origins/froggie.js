@@ -336,7 +336,7 @@ ServerEvents.highPriorityData(e => {
             interval: 600,
             onset_delay: 1,
             damage: 1,
-            damage_type: 'inWall',
+            damage_type: 'origins:no_water_for_gills',
             condition: {
                 type: 'origins:resource',
                 resource: '*:*_resource',

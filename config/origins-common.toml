@@ -39,6 +39,8 @@
 		enabled = true
 		"origins:burn_in_daylight" = true
 		"origins:phantomize_overlay" = true
+		"kubejs:phantom/suffocation_fix" = true
+		"kubejs:phantom/sleepless_brethren" = true
 
 	[origins."origins:enderian"]
 		"origins:water_vulnerability" = true
@@ -138,4 +140,9 @@
 		enabled = true
 		"kubejs:debug/shader1" = true
 		"kubejs:debug/shader1_toggle" = true
+
+	[origins."kubejs:trent"]
+		enabled = true
+		"kubejs:trent/scale" = true
+		"kubejs:trent/flight" = true
 

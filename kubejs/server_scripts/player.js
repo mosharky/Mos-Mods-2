@@ -29,15 +29,15 @@ PlayerEvents.loggedIn(event => {
     const { player } = event
 
     // currency notification
-    if (!player.stages.has('currency_overhaul')) {
-        player.tell([
-            Text.blue('Hey you! We reworked every single villager trade with a new currency system! A one-time compensatory bag of money has been added to your inventory; redeem by right-clicking while in hand.'),
-            Text.gold('\n\n1 Gold Coin'), Text.blue(' = '), Text.gray('100 Silver Coins'), Text.blue(' = '), Text.of('10,000 Bronze Coins').color(0xCD7F32),
-            Text.gray('\n\nVisit '), Text.lightPurple('the changelog').clickOpenUrl('https://mosharky.github.io/Mos-Mods-2/changelogs/v2.2.0').underlined().hover('Click to open URL'), Text.gray(' for more information.')
-        ])
-        player.give(Item.of('numismatic-overhaul:money_bag', '{Combined:1b,Values:[L;50L,25L,0L]}'))
-        player.stages.add('currency_overhaul')
-    }
+    // if (!player.stages.has('currency_overhaul')) {
+    //     player.tell([
+    //         Text.blue('Hey you! We reworked every single villager trade with a new currency system! A one-time compensatory bag of money has been added to your inventory; redeem by right-clicking while in hand.'),
+    //         Text.gold('\n\n1 Gold Coin'), Text.blue(' = '), Text.gray('100 Silver Coins'), Text.blue(' = '), Text.of('10,000 Bronze Coins').color(0xCD7F32),
+    //         Text.gray('\n\nVisit '), Text.lightPurple('the changelog').clickOpenUrl('https://mosharky.github.io/Mos-Mods-2/changelogs/v2.2.0').underlined().hover('Click to open URL'), Text.gray(' for more information.')
+    //     ])
+    //     player.give(Item.of('numismatic-overhaul:money_bag', '{Combined:1b,Values:[L;50L,25L,0L]}'))
+    //     player.stages.add('currency_overhaul')
+    // }
     
     // spooking people only in october
     let currentMonth = new Date().getMonth() + 1

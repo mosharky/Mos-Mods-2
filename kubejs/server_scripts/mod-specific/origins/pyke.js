@@ -95,16 +95,16 @@ ServerEvents.highPriorityData(e => {
                 type: 'origins:if_else',
                 condition: {
                     type: 'origins:status_effect',
-                    effect: 'minecraft:night_vision'
+                    effect: 'minecraft:conduit_power'
                 },
                 if_action: {
                     type: 'origins:clear_effect',
-                    effect: 'minecraft:night_vision',
+                    effect: 'minecraft:conduit_power',
                 },
                 else_action: {
                     type: 'origins:apply_effect',
                     effect: {
-                        effect: 'minecraft:night_vision',
+                        effect: 'minecraft:conduit_power',
                         duration: 2147483646,
                         is_ambient: true,
                         show_particles: false,

@@ -7,6 +7,7 @@ ServerEvents.highPriorityData(e => {
             'kubejs:cave_dwarf',
             'kubejs:goblin',
             'kubejs:froggie',
+            'kubejs:trent',
             // 'kubejs:debug'
         ]
     })

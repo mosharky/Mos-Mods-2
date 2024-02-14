@@ -18,7 +18,7 @@ ServerEvents.recipes(e => {
         'salt:gunpowder',
         'alexscaves:gunpowder_from_sulfur',
         'embers:copper_nugget_to_ingot',
-        // /bclib:.*/,
+        /bclib:.*/,
         // mod-specific/container_overhaul
         /.*ironshulkerbox.*/,
         'minecraft:shulker_box',
