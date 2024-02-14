@@ -1034,7 +1034,7 @@ hash = "a3e6e87433dc59680c6ef3d27171ab18318501b8d2176c767ec3fa98ac5bdaaf"
 
 [[files]]
 file = "config/everycomp-common.toml"
-hash = "37a0ee31c01ab5851fe38ee1a8b0e69d0a4e92a627dea5809785322818c3c768"
+hash = "fc2b93c1177080b6b4950990b160602e890976a5be8ff8f5492582f9a245add6"
 
 [[files]]
 file = "config/everycomp-hazardous.properties"
@@ -3849,8 +3849,8 @@ file = "mods/saturn-mc1.20.1-0.1.3.jar"
 hash = "7e6dcc7c2b0db19ec2f965fac91a49e13dcc611f2d86f6bb56d7d68da901aaf8"
 
 [[files]]
-file = "mods/sawmill-1.20-1.3.2.jar"
-hash = "bb3a92b2a7f11f460b9a472ff709b721aba5cd29c82e88a678009eaf7328cea2"
+file = "mods/sawmill-1.20-1.3.0.jar"
+hash = "ee20f2524fa3e014a0e9f6c9dadbf86dc4d931168171ac8a9c92299a9170a1dc"
 
 [[files]]
 file = "mods/seamless-2.2.2-forge-1.20.1.jar"
@@ -3913,8 +3913,8 @@ file = "mods/supermartijn642corelib-1.1.16-forge-mc1.20.1.jar"
 hash = "8a61a541f0dbf849a14188a2e891494ae4853f44fb29c69be5b7d3cd669f9ac4"
 
 [[files]]
-file = "mods/supplementaries-1.20-2.7.36.jar"
-hash = "cab08e395bc9b1333614694b8779b77ff30cc4d5acb5902fb61aff5ef79345cd"
+file = "mods/supplementaries-1.20-2.7.35.jar"
+hash = "47944de691fb3dd69e74ce75321428ad9ed515d64b32c2fe4c65112379443b51"
 
 [[files]]
 file = "mods/suppsquared-1.20-1.1.12.jar"
