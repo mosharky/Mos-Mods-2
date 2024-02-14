@@ -25,6 +25,7 @@ ServerEvents.highPriorityData(e => {
         type: 'easyshulkerboxes:block_entity',
         any_game_mode: true,
         block_entity_type: 'minecraft:shulker_box',
+        filter_container_items: true,
         inventory_height: 2,
         inventory_width: 9
     })
@@ -35,6 +36,7 @@ ServerEvents.highPriorityData(e => {
             type: 'easyshulkerboxes:block_entity',
             any_game_mode: true,
             block_entity_type: 'minecraft:shulker_box',
+            filter_container_items: true,
             background_color: colour,
             inventory_height: 2,
             inventory_width: 9
@@ -81,7 +83,6 @@ ServerEvents.recipes(e => {
         }
     })
 
-    // TODO: check if i need this, or if this is wacky
     e.replaceInput({}, 'minecraft:shulker_box', 'ironshulkerbox:iron_shulker_box')
     e.replaceOutput({}, 'minecraft:shulker_box', 'ironshulkerbox:iron_shulker_box')
 

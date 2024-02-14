@@ -4,14 +4,15 @@
 /config/inventoryprofilesnext/*
 !config/inventoryprofilesnext/inventoryprofiles.json
 /config/voicechat/username-cache.json
-/config/voicechat-volumes.properties
-/config/voicechat-server.properties
+/config/voicechat/voicechat-volumes.properties
+/config/voicechat/voicechat-server.properties
 /config/Obscuria/Data/
 /config/indium-renderer.properties
 /config/fabric/indigo-renderer.properties
 /config/spark/activity.json
 /config/embeddium-fingerprint.json
 /config/mc2discord.toml
+/config/cpm.json
 # /kubejs/config/client.properties
 # /kubejs/config/common.properties
 

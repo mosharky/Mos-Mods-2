@@ -1274,7 +1274,7 @@ hash = "1988b86b1249cd3e48054df8c94f0225022dbc17689cc0fec2f0e0bde40709c8"
 
 [[files]]
 file = "config/origins-common.toml"
-hash = "2a228deb045f101dc64e88ea61dd4101c26c9f9c82f82a5588b9be62ef30b049"
+hash = "f2433756421876a8c056d4770745f869d2800a89f67810112bd1903b9369e605"
 
 [[files]]
 file = "config/origins_server.json"
@@ -1455,10 +1455,6 @@ hash = "7885b862b10bf4b14d3103909971114a736d14a52e4a7994ace0d66a2474c14c"
 [[files]]
 file = "config/voicechat/translations.properties"
 hash = "b8215b84232be41438ffb7c7304b57b0677c9cad49b717db59900872080adf20"
-
-[[files]]
-file = "config/voicechat/voicechat-volumes.properties"
-hash = "58242ef3075b166845e0081281b01113a55b9d095104a68b167e7b4bc08b87c5"
 
 [[files]]
 file = "config/weaponmaster-common.toml"
@@ -2198,7 +2194,7 @@ hash = "68f79b186c42fe1743d257d66f598347cc9f3957ce15d383138fff2907b54dbd"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/container_overhaul.js"
-hash = "ca3b7e5f18344e2b149e54008c4473ecdc55ab2ba8b5ea8b18f9a6624179f246"
+hash = "a4b9d89544bf7c9cc4e5d2da934a3c7be425306a16db1645abf423c3fe4f3b62"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/create.js"
@@ -2230,11 +2226,11 @@ hash = "bc4294913fe4ee540d967d99f38c6523a1111a357eedc518eb6e88d3a1419297"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/origins/_layer.js"
-hash = "b225db9dcdf220587863651c57ffa93fb0a355e8c1ea7e74117fa791df7185d9"
+hash = "c7b5b8b33a425f65da15d1099189e27cee31d7765c90d82f8188cd134ba37cc6"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/origins/_overrides.js"
-hash = "0b389e9a5e293fdaf025af569d3cfdd77def51d399127c5407dd0f8b17afed0c"
+hash = "b90796de9c8bba1046da9affd95f8a29110cb6613d3c75ab4ea4fa0be7f76613"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/origins/dwarf.js"
@@ -2242,7 +2238,7 @@ hash = "0c1a14c160b44700ba89222b4992ec670692f6e8dab275b2e67a966dc527d756"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/origins/froggie.js"
-hash = "4ac27e12f154dd471b003992c31fe25ce8ecd53cee9c10a3b45622f5fe5ea43e"
+hash = "91de3a24f1625b5d65d998a937da4d68a4651a54c865cc404dae41fbf7fb0b6b"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/origins/goblin.js"
@@ -2250,11 +2246,15 @@ hash = "5a16d498b8926d7b90eede984f1c9580c5b32bca672c5a3e6f3db8485fa8427c"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/origins/pyke.js"
-hash = "197aef085c1e7ae30e71be914312aacc7949f77241fb87eddbaefc032e872fc3"
+hash = "2cdb26600fd6118b5c77f53ebdbbd356446d6fd91d53c40aa3f6a16ba1d02232"
+
+[[files]]
+file = "kubejs/server_scripts/mod-specific/origins/trent.js"
+hash = "4f866f315a494f21c767be75721b0a43176b81e9756aa136fe126fc4969be262"
 
 [[files]]
 file = "kubejs/server_scripts/player.js"
-hash = "96431600068e20b021a0d1ba488671b5d587db99a05915c51041c36bdd884f64"
+hash = "0d813603fd36d6f3be7a290cc7afc476a93a9802729344c3444974621eeaaffd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
@@ -2262,7 +2262,7 @@ hash = "45726cb57e1888cecbfa1235bdeb594b9e9010c9525022ec29a10788717b352d"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "2935b2ad6b13d97dc61e4f85cd0c231e18181852573dead7b2573cb42a0b392a"
+hash = "a00c58ac7355722c872be6451798ec71b8c2d52da5650431374203862d07c582"
 
 [[files]]
 file = "kubejs/server_scripts/replacing.js"
@@ -2274,7 +2274,7 @@ hash = "06c95ff5d1258901751daad21245629ac527462d58e2066dc8e356e73fd7595f"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
-hash = "2e196fcd59c7787db06deb8895b3d884d867c1a3701a894e942890ef5b9c0b44"
+hash = "24e227bb9a0232ac9e002fccb74cbc96a65809f2c56ad8eaab98ef6935c65372"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen.js"
@@ -2375,6 +2375,10 @@ hash = "a4576418ec278b63f12a60e500a062ed7353416ba70c3778caad23976bc041c9"
 [[files]]
 file = "mods/CullLessLeaves-Reforged-1.20.1-1.0.5.jar"
 hash = "b91ca5cd028b1c919e28851b984edd61874d44ad8038cdeee87315d2656cb292"
+
+[[files]]
+file = "mods/CustomPlayerModels-1.20-0.6.14c.jar"
+hash = "5c94a0f6567c62b187dc160100028a0d2979ec24b0831d6d9f5676e571c15ae2"
 
 [[files]]
 file = "mods/DeathCounter-1.20.1-Forge-1.3.0.jar"

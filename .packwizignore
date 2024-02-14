@@ -40,8 +40,8 @@ LICENSE
 /config/inventoryprofilesnext/*
 !config/inventoryprofilesnext/inventoryprofiles.json
 /config/voicechat/username-cache.json
-/config/voicechat-volumes.properties
-/config/voicechat-server.properties
+/config/voicechat/voicechat-volumes.properties
+/config/voicechat/voicechat-server.properties
 /config/Obscuria/Data/
 /config/indium-renderer.properties
 /config/xaerominimap_entities.json
@@ -49,6 +49,7 @@ LICENSE
 /config/spark/activity.json
 /config/embeddium-fingerprint.json
 /config/mc2discord.toml
+/config/cpm.json
 
 # root folders
 /not-enough-crashes/
