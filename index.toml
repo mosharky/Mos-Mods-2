@@ -1478,7 +1478,7 @@ hash = "c8407c81c41d227c7f734ba5abafff9f5c3c533b66a9695e5d5f04afdcedeacd"
 
 [[files]]
 file = "config/nmpvc-common.toml"
-hash = "a8ab4664080b726c875b4a60d06dfe8d9bf7ffe1579ceabf2f672ccc19d739aa"
+hash = "73ce3064e9dc87521477cd4d604fc8d1ea9e4918fde9fe8bd6bb163d86d94b5b"
 
 [[files]]
 file = "config/numismatic-overhaul.json5"
@@ -2894,7 +2894,7 @@ hash = "2cdb26600fd6118b5c77f53ebdbbd356446d6fd91d53c40aa3f6a16ba1d02232"
 
 [[files]]
 file = "kubejs/server_scripts/mod-specific/origins/trent.js"
-hash = "33c6df060c190d3b7f285d907846122db923557b34659b4ebc7b5dd051c01f6f"
+hash = "4f866f315a494f21c767be75721b0a43176b81e9756aa136fe126fc4969be262"
 
 [[files]]
 file = "kubejs/server_scripts/player.js"
@@ -3581,8 +3581,8 @@ file = "mods/ensorcellation-1.20.1-5.0.0.21.jar"
 hash = "b57b089b3b60a271a6a3b57f7e6172e293fb951e092fb98834793c299aa8d635"
 
 [[files]]
-file = "mods/everycomp-1.20-2.6.33.jar"
-hash = "2ddfbc422ac96e58069c9854c18ffc513b386f62ebc3c154f8cbf8b2381ed387"
+file = "mods/everycomp-1.20-2.6.29.jar"
+hash = "c0b7bddedae25d6489b044bae2e15654f6a41290cd23a006a00ffab6e073bc91"
 
 [[files]]
 file = "mods/explosive-enhancement-1.2.2-1.20.x.jar"
@@ -3753,8 +3753,8 @@ file = "mods/modernfix-forge-5.13.0+mc1.20.1.jar"
 hash = "9f56a2eb8c6e4a26384cda0d18fdb9c160c12b85584a4c13475e45bae335bf9f"
 
 [[files]]
-file = "mods/moonlight-1.20-2.9.15-forge.jar"
-hash = "c53825bdbd3f984906159d96ed05893a7acc9e15473efff556f9b0c6777f6d75"
+file = "mods/moonlight-1.20-2.9.10-forge.jar"
+hash = "32f44e0a95058949c4e5df2c8019014608c747a6b1c762efeb84c93ccd59886f"
 
 [[files]]
 file = "mods/morejs-forge-1.20.1-0.6.0.jar"

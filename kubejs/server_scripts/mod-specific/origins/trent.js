@@ -2,7 +2,7 @@ ServerEvents.highPriorityData(e => {
 
 
     e.addJson('kubejs:origins/trent.json', {
-        name: 'Treant',
+        name: 'Trent',
         description: 'Big tree. Made exclusively for lemeshh.',
         icon: 'minecraft:oak_sapling',
         powers: [
