@@ -3061,10 +3061,6 @@ file = "mods/kubejs-forge-2001.6.4-build.138.jar"
 hash = "8642bb9a028644fa4ccf967e07491e731235c598df89041e85f146b482fe45cd"
 
 [[files]]
-file = "mods/lazurite-1.0.3+mc1.20.1.jar"
-hash = "b2f5962ff951710cfd31b55ff8349474c03f88ea32942af50406a33c32dafeb3"
-
-[[files]]
 file = "mods/letfishlove-2.0.3.jar"
 hash = "95f411c55c06fbaf4ea14324424625787efbc993772f07bf8b06d380bdeb7a3a"
 
