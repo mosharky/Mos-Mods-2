@@ -115,6 +115,34 @@
 			frequency = 1.5
 			max_angle = 54.999996
 
+	[blocks.wall_lantern]
+		#Makes wall lantern use a simple block model instead of the animated tile entity renderer. This will make them render much faster but will also remove the animationNote that this option only affect lanterns close by as the one far away render as fast by default
+		fast_lanterns = false
+
+		[blocks.wall_lantern.swing_physics]
+			frequency = 0.6
+			collision_considers_entity_hitbox = true
+			collision_inertia = 1.0
+			collision_force = 15.0
+			min_angle = 0.79999995
+			max_angle = 60.0
+			damping = 0.525
+
+	[blocks.enhanced_hanging_sign]
+		#Modifies vanilla hanging signs to make them like old Supplementaries ones
+		enabled = true
+		#Makes supplementaries hanging signs use a simple block model instead of the animated tile entity renderer. This will make them render much faster but will also remove the animationNote that this option only affect lanterns close by as the one far away render as fast by default
+		fast_signs = false
+
+		[blocks.enhanced_hanging_sign.swing_physics]
+			frequency = 0.6
+			collision_considers_entity_hitbox = true
+			collision_inertia = 1.0
+			collision_force = 15.0
+			min_angle = 0.79999995
+			max_angle = 60.0
+			damping = 0.525
+
 #Particle parameters
 [particles]
 
@@ -149,8 +177,6 @@
 	#Config button Y offset
 	#Range: -10000 ~ 10000
 	config_button_y_offset = 0
-	#Disables Amendments suggestion screen
-	no_amendments_screen = false
 
 #Game tweaks
 [tweaks]
@@ -180,6 +206,9 @@
 	#Size of the tooltip image used for Sherds, Blackboards, Banner patterns and Paintings
 	#Range: 1 ~ 255
 	tooltip_image_size = 80
+	#A scalar multiplier that will be applied to sign text making it brighter, supposedly more legible
+	#Range: 0.0 ~ 5.0
+	sign_text_color_multiplier = 1.2000000476837158
 
 	[tweaks.colored_maps]
 		#Needs the server config with same name on. If on here it will ignore the server one and keep vanilla colors
