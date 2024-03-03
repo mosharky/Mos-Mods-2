@@ -16,6 +16,10 @@
 # /kubejs/config/client.properties
 # /kubejs/config/common.properties
 
+# client-sided exceptions
+/kubejs/assets/
+/kubejs/client_scripts/
+
 # mods
 /mods/.connector/
 /mods/.index/

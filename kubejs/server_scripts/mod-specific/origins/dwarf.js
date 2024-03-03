@@ -350,7 +350,8 @@ ServerEvents.highPriorityData(e => {
                         equipment_slot: 'offhand',
                         action: {
                             type: 'origins:damage',
-                            amount: 10
+                            amount: -10,
+                            ignore_unbreaking: true
                         }
                     },
                     {
@@ -473,7 +474,7 @@ ServerEvents.highPriorityData(e => {
             },
             hud_render: {
                 sprite_location: 'kubejs:textures/gui/resource_bar.png',
-                bar_index: 6
+                bar_index: 5
             }
         },
         debuff: {
@@ -544,7 +545,7 @@ ServerEvents.highPriorityData(e => {
                     },
                     {
                         type: 'origins:dimension',
-                        dimension: 'minecraft:nether'
+                        dimension: 'minecraft:the_nether'
                     },
                     {
                         type: 'origins:and',
@@ -704,7 +705,7 @@ ServerEvents.highPriorityData(e => {
 
     e.addJson('kubejs:powers/cave_dwarf/grand_equipment.json', {
         name: 'Grand Equipment',
-        description: 'All equipped armor and weapons loses 25% protection or damage for each met condition:\n- An equipped item is not made of a precious metal\n- An equipped item is not enchanted',
+        description: 'All equipped armor and weapons loses 25% protection or melee damage for each met condition:\n- An equipped item is not made of a precious metal\n- An equipped item is not enchanted',
         type: 'origins:multiple',
         precious_metal_armor: {
             type: 'origins:conditioned_attribute',
@@ -807,7 +808,7 @@ ServerEvents.highPriorityData(e => {
             type: 'origins:conditioned_attribute',
             tick_rate: 10,
             modifier: {
-                attribute: 'minecraft:generic.armor',
+                attribute: 'minecraft:generic.attack_damage',
                 operation: 'multiply_total',
                 value: -0.25,
             },

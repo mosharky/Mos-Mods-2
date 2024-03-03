@@ -1,12 +1,12 @@
 name = "Mo's Mods 2"
 author = "mosharky"
-version = "2.2.0"
+version = "2.2.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "e33fde10aff11f8d866b8278877de8965238fc1795482cc45ea36a3d2d60aa8f"
+hash = "47c8e2cada2797fa6c1bb3ac33768f59986efd4a21209a532472cac344080c2f"
 
 [versions]
 forge = "47.1.3"

@@ -278,12 +278,12 @@ ServerEvents.highPriorityData(e => {
 
     e.addJson('kubejs:powers/froggie/curse_of_squishy.json', {
         name: 'Curse of Squishy',
-        description: 'You have 3 less hearts.',
+        description: 'You have 1 less heart.',
         type: 'origins:attribute',
         modifier: {
             attribute: 'minecraft:generic.max_health',
             operation: 'addition',
-            value: -6,
+            value: -2,
         },
     })
 

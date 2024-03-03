@@ -1,6 +1,8 @@
 {
     "files.exclude": {
-        ".vscode/": true,
+        ".vscode/probe*": true,
+        ".vscode/*attributes*": true,
+        ".vscode/lang-keys.json": true,
         ".curseclient": true,
         ".qmenu_opened.marker": true,
         "enigmatic_persistence.dat": true,
@@ -36,12 +38,14 @@
         "local/": true,
         "modernfix/": true,
         "showdown/": true,
+        "showdown-backup/": true,
         "Xaero*/": true,
         "seamless.txt": true,
         "servers.dat": true,
         "servers.dat_old": true,
         "data/": true,
-        "fabricloader.log": true
+        "fabricloader.log": true,
+        "moddata/": true
     },
     "json.schemas": [
         {

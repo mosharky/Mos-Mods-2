@@ -4,6 +4,7 @@ ServerEvents.recipes(e => {
     e.shapeless('4x betterarcheology:rotten_planks', 'betterarcheology:rotten_log').id('kubejs:shapeless/rotten_planks_from_log')
     e.shapeless('4x minecraft:stick', '#regions_unexplored:branches').id('kubejs:shapeless/stick_from_branch')
     e.shapeless('2x miners_delight:insect_sandwich', ['miners_delight:cooked_arthropod', 'miners_delight:cooked_arthropod', '#forge:bread', '#forge:bread']).id('miners_delight:insect_sandwich')
+    e.shapeless('regions_unexplored:mossy_stone', ['minecraft:stone', '#forge:moss']).id('kubejs:shapeless/mossy_stone')
     // blasting
     e.blasting('minecraft:glass', 'minecraft:sand').xp(0.1).id('kubejs:blasting/glass')
     e.blasting('minecraft:stone', 'minecraft:cobblestone').xp(0.1).id('kubejs:blasting/stone')
@@ -16,6 +17,7 @@ ServerEvents.recipes(e => {
     e.smelting('ad_astra:calorite_ingot', 'kubejs:crushed_raw_calorite').xp(0.1).id('kubejs:smelting/calorite_ingot_from_crushed')
     e.smelting('ad_astra:desh_ingot', 'kubejs:crushed_raw_desh').xp(0.1).id('kubejs:smelting/desh_ingot_from_crushed')
     e.smelting('ad_astra:ostrum_ingot', 'kubejs:crushed_raw_ostrum').xp(0.1).id('kubejs:smelting/ostrum_ingot_from_crushed')
+    e.smelting('moreminecarts:glass_spines', 'betterend:neon_cactus').xp(0.5).id('kubejs:smelting/neon_cactus')
 
 
     // rats

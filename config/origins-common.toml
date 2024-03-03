@@ -146,3 +146,17 @@
 		"kubejs:trent/scale" = true
 		"kubejs:trent/flight" = true
 
+	[origins."kubejs:xayah"]
+		enabled = true
+		"kubejs:xayah/light_as_a_feather" = true
+		"kubejs:xayah/short" = true
+		"kubejs:xayah/wild_magic" = true
+		"kubejs:xayah/defoliated_surroundings" = true
+		"origins:vegetarian" = true
+		"kubejs:xayah/air_out_those_feathers" = true
+		"kubejs:xayah/clean_cuts" = true
+		"kubejs:xayah/deady_plumage" = true
+		"kubejs:xayah/featherstorm" = true
+		"kubejs:xayah/redeem_feathers" = true
+		"kubejs:xayah/feathered_hygiene" = true
+

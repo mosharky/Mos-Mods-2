@@ -7,6 +7,13 @@ ServerEvents.tags('item', e => {
     e.add('forge:storage_blocks/cheese', 'brewinandchewin:flaxen_cheese_wheel')
     e.add('forge:storage_blocks/nether_cheese', 'brewinandchewin:scarlet_cheese_wheel')
     e.add('curios:body', /aether:.*cape.*/)
+    e.add('minecraft:planks', /deep_aether:.*planks/)
+    e.add('forge:feathers', 'kubejs:xayahs_feather')
+    e.add('forge:feathers', 'kubejs:xayahs_feather')
+    e.add('minecraft:creeper_drop_music_discs', [
+        'kubejs:music_disc_freddys_death'
+    ])
+
     e.add('forge:plates', [
         'createdeco:zinc_sheet',
     ])
@@ -39,6 +46,27 @@ ServerEvents.tags('item', e => {
 
     e.add('forge:boxes/shulker', global.ironShulkerBoxes)
     e.add('minecraft:shulker_boxes', global.ironShulkerBoxes)
+
+    e.add('alexscaves:ferromagnetic_items', [
+        /ad_astra:.*iron.*/,
+        /ad_astra:.*steel.*/,
+        /ad_astra:(space|netherite_space)_(helmet|suit|pants|boots)/,
+        /ad_astra:jet_suit.*/,
+        /iceandfire:.*dragonsteel.*/,
+        /aether:(iron|netherite)_(gloves|ring|pendant|bubble)/,
+        /farmersdelight:(iron|netherite)_knife/,
+        /nethersdelight:(iron|netherite)_machete/,
+        /quark:iron.*/,
+        'quark:grate',
+        /.*nethersteel.*/,
+        /createdeco:.*iron.*/,
+        /createdeco:.*netherite.*/,
+        /createbigcannons:.*steel.*/,
+        /supplementaries:.*iron.*/,
+        /supplementaries:.*netherite.*/,
+        'create_jetpack:netherite_jetpack'
+    ])
+
 
     // origins
     let caveDwarfFoods = [
@@ -560,6 +588,21 @@ ServerEvents.tags('block', e => {
 
     e.add('forge:boxes/shulker', global.ironShulkerBoxes)
     e.add('minecraft:shulker_boxes', global.ironShulkerBoxes)
+
+    e.add('alexscaves:ferromagnetic_blocks', [
+        /ad_astra:.*iron.*/,
+        /ad_astra:.*steel.*/,
+        /iceandfire:.*dragonsteel.*/,
+        /quark:.*iron.*/,
+        'quark:grate',
+        /.*nethersteel.*/,
+        /createdeco:.*iron.*/,
+        /createdeco:.*netherite.*/,
+        /createbigcannons:.*steel.*/,
+        /createbigcannons:.*cast_iron.*/,
+        /supplementaries:.*iron.*/,
+        /supplementaries:.*netherite.*/,
+    ])
 })
 
 ServerEvents.tags('fluid', e => {
@@ -607,7 +650,7 @@ ServerEvents.tags('entity_type', e => {
     e.add('alexsmobs:sunbird_scorch_targets', '#forge:bosses')
     e.add('botania:shaded_mesa_blacklist', '#forge:bosses')
     e.add('cataclysm:ignis_cant_poke', '#forge:bosses')
-    e.add('domesticationinnovation:infamy_target_attracked', '#forge:bosses')
+    e.add('domesticationinnovation:infamy_target_attracted', '#forge:bosses')
     e.add('endermanoverhaul:cant_be_teleported', '#forge:bosses')
     e.add('minecraft:fall_damage_immune', '#forge:bosses')
     e.add('minecraft:freeze_immune_entity_types', '#forge:bosses')
