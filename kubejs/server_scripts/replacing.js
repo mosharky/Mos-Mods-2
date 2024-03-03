@@ -111,6 +111,7 @@ EntityEvents.spawned(e => {
 
 
 // generating ez blockswappering
+/*
 let blockswapObj = {}
 blockswapObj['minecraft:shulker_box'] = 'ironshulkerbox:iron_shulker_box'
 global.colours.forEach(colour => blockswapObj[`minecraft:${colour}_shulker_box`] = `ironshulkerbox:iron_shulker_box_${colour}`)
@@ -127,3 +128,4 @@ Ingredient.of(/betterend:.*bar_stool/).itemIds.forEach(item => blockswapObj[item
 Ingredient.of(/betternether:.*bar_stool/).itemIds.forEach(item => blockswapObj[item] = 'handcrafted:crimson_chair')
 JsonIO.write('config/blockswap/kubejs_gen.json', blockswapObj)
 // console.log(Ingredient.of(/betterend:(.*taburet|.*bar_stool|.*chair|.*barrel|.*crafting_table|.*lantern.*)/).itemIds)
+*/
