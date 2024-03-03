@@ -264,4 +264,5 @@ ServerEvents.highPriorityData(e => {
     removeBiomeModifier('embers:add_lead_ore')
     removeBiomeModifier('embers:add_silver_ore')
     removeBiomeModifier('crabbersdelight:crab')
+    removeBiomeModifier('moreminecarts:glass_cactus_patch')
 })

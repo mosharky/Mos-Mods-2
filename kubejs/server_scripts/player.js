@@ -69,14 +69,14 @@ PlayerEvents.loggedIn(event => {
 
 ServerEvents.loaded(event => {
     event.server.runCommandSilent('reload')
-    /* Auto chunky
+    // Auto chunky
     let nbOnlinePlayers = event.getServer().getPlayers().length;
     if (nbOnlinePlayers <= 0) {
         event.server.runCommandSilent('chunky continue')
-    } */    
+    }   
 })
 
-/*
+
 // On player login, pause chunky
 PlayerEvents.loggedIn(event => {
     event.server.runCommandSilent('chunky pause')
@@ -91,7 +91,7 @@ PlayerEvents.loggedOut(event => {
         event.server.runCommandSilent('chunky continue')
     }
 })
-*/
+
 
 // https://github.com/FTBTeam/FTB-Essentials/blob/1.20.1/dev/common/src/main/java/dev/ftb/mods/ftbessentials/util/FTBEPlayerData.java
 let $FTBEssentials

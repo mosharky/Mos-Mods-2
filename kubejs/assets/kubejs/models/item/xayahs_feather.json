@@ -1,0 +1,29 @@
+{
+	"credit": "Made by mo_shark",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "kubejs:item/xayahs_feather"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [28.25, -75, 0],
+			"translation": [0.25, 4.75, 2.25],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [28.25, 75, 0],
+			"translation": [0.25, 4.75, 2.25],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 0],
+			"translation": [0, 5.75, 0.75],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 75, 0],
+			"translation": [0, 5.25, 1.25],
+			"scale": [0.75, 0.75, 0.75]
+		}
+	}
+}

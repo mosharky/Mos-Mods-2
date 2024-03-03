@@ -107,10 +107,20 @@ ServerEvents.highPriorityData(e => {
     e.addJson('kubejs:powers/phantom/sleepless_brethren.json', {
         name: 'Sleepless Brethren',
         description: 'Phantoms will no longer hunt you.',
-        type: 'origins:modify_insomnia_ticks',
-        modifier: {
-            operation: 'set_total',
-            value: 0
+        type: 'origins:multiple',
+        no_insomnia: {
+            type: 'origins:modify_insomnia_ticks',
+            modifier: {
+                operation: 'set_total',
+                value: 0
+            }
+        },
+        phantom_ignore: {
+            type: 'apugli:mobs_ignore',
+            mob_condition: {
+                type: 'origins:entity_type',
+                entity_type: 'minecraft:phantom',
+            }
         }
     })
 

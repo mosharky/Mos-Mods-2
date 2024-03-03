@@ -1,5 +1,6 @@
 - If you want shaders, you'll have to install the [Oculus](https://modrinth.com/mod/oculus) mod. It could introduce a few visual bugs, even if you're not using shaders, so we opted to keep this mod out of the modpack and leave it as a choice
     - A fixed version of Complementary Shaders is already included in the modpack
+- You can add your own songs to the instruments. Grab your song as a MIDI file and drag-drop it into the in-game song selection menu.
 - Optional cosmetic mods (these weren't included for performance):
     - [Chunk Animator](https://modrinth.com/mod/chunkanimator) - Chunk loading animations
     - [Falling Leaves](https://modrinth.com/mod/fallingleavesforge) - Leaf particles under trees
