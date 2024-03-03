@@ -849,18 +849,6 @@ file = "config/eidolon-common.toml"
 hash = "ea208bedfed2f122b05997b3af13b0d450e8a473914c1f0c089373166e0e5171"
 
 [[files]]
-file = "config/embeddium++.toml"
-hash = "3931ac78908110642599ca515d70986b8364a71a403f7f2a3640a1f6feb45b66"
-
-[[files]]
-file = "config/embeddium-mixins.properties"
-hash = "09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619"
-
-[[files]]
-file = "config/embeddium-options.json"
-hash = "aef881c7fa6e0e234399f6dbaf34ebb7b0d4c08b1c0755bdc2b2af00f1cab4c3"
-
-[[files]]
 file = "config/embers-common.toml"
 hash = "54ba494a13ea46c303bf50b58bfc4103d76c266e55ebe9c63e3354b2423970e6"
 
@@ -2919,10 +2907,6 @@ hash = "35bdd3c5a13125982a157a74f091d841e08b277bb2eda1787211f67de38368dd"
 [[files]]
 file = "mods/elytraslot-forge-6.3.0+1.20.1.jar"
 hash = "f63e65963dd486f3a3411515afca8565b6209de9cabad1d940541be0b3165c66"
-
-[[files]]
-file = "mods/embeddium-0.3.7+mc1.20.1.jar"
-hash = "70132fbade5ef4f97182cae38f078c720c948078fe1c5f2f91bde3a81330a368"
 
 [[files]]
 file = "mods/embersrekindled-1.20.1-1.1.1.jar"

@@ -14,6 +14,7 @@ LICENSE
 # client-sided exceptions
 /config/*client*
 /config/*/*client*
+/config/embeddium*
 /kubejs/assets/
 /kubejs/client_scripts/
 /resourcepacks/
@@ -31,6 +32,7 @@ LICENSE
 /mods/durabilitytooltip*
 /mods/lighty*
 /mods/starlight*
+/mods/embeddium*
 /mods/embeddiumplus*
 /mods/textrues_embeddium_options*
 /mods/tradeuses*
