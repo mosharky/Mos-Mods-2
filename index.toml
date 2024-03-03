@@ -102,7 +102,7 @@ hash = "08a9f7c6f63bd35d49b15fa5bccd8cdf667f21af0c9a8cb2ab5998eb598ee7c3"
 
 [[files]]
 file = "config/alexscaves-client.toml"
-hash = "4506f0c630f55dd38dc0cbb66fd0828428ad5158348753dc49aa28f05896eae0"
+hash = "be636ba4f19ae2ed03b8d3d78f3cb741971a0dc9b5ea84dac42b95ac4bdc0da9"
 
 [[files]]
 file = "config/alexscaves-general.toml"
@@ -514,7 +514,7 @@ hash = "af3b4b80d979d1199bb27d1b755d894ca9e62b23447f2222e9ac686ec0d634db"
 
 [[files]]
 file = "config/amendments-common.toml"
-hash = "2fbb5b75e9b01730926879e261f52ce25d55edb9b54a6b684f599f47d7e22032"
+hash = "74f85f0a6db941bf9098f2257dde636881977bbc873e5c4659baff05ac654b87"
 
 [[files]]
 file = "config/apoli-client.toml"
@@ -1066,7 +1066,7 @@ hash = "27f25bc93a2aabad748badd0a879e3a7bf1b122941c2f872807c8f27915c87e0"
 
 [[files]]
 file = "config/exposure-common.toml"
-hash = "4d08298abbd6bb3f2a8d93cb8d58fb06106155169f2da58c09b87687c7269308"
+hash = "f849759c7fd6e5d9426dce8e8d2f96929854bc7985921ded88abe90347a166ec"
 
 [[files]]
 file = "config/extrasounds-client.toml"
@@ -1582,7 +1582,7 @@ hash = "480697ae74306cdcd17eed12a34795b7856f00d183d06ce69fd0fbf046c54c2e"
 
 [[files]]
 file = "config/quark-common.toml"
-hash = "f33b1c6be0c532b96fce6cfb5892a3256b18f357148b144d0d2dcf9fb6a234fe"
+hash = "47c3e2a75c3629e94e8b8faaa812e712e36775a09f36a385cb60f878e1e1ba6e"
 
 [[files]]
 file = "config/railways-client.toml"
@@ -1722,7 +1722,7 @@ hash = "f029566add52484ed6475e5473b6a10d088797ec8e8d4fe905beab4f97f58afc"
 
 [[files]]
 file = "config/supplementaries-common.toml"
-hash = "0bb51aedf9c5880e7a2700a215fb1b65b162fb71695229b02566b9706272a766"
+hash = "d990c0c7c5960aadfee35c2bda201c0010c596bb3512083a7c13180ff148d0c3"
 
 [[files]]
 file = "config/tact-common.toml"
@@ -2298,7 +2298,7 @@ hash = "ef2cca8696f56d5ba6ccd59ba81d4bcb1a5aa28a185c623e1c9de1027f4cb209"
 
 [[files]]
 file = "kubejs/config/common.properties"
-hash = "f867af7a0e232453b6adec3d953e85efd5e9c3af2fddc3f30c080e5a4d88da1c"
+hash = "b8ae774677d2c2c0644c95b42a550ee9ac406619b71355c80ad66497d3d87830"
 
 [[files]]
 file = "kubejs/data/areas_undefined/worldgen/configured_feature/acacia_tree.json"
@@ -2966,7 +2966,7 @@ hash = "99d8d3bafa593fa59aa553d94ba8ba2437b3d83df3c5c74bedad77a7728a609f"
 
 [[files]]
 file = "kubejs/server_scripts/replacing.js"
-hash = "fce57999afe1fe2cf03301f01710d853537bbd2d4e5956316923b28f5da69529"
+hash = "a10b8235a36235682015c9b8b1e0f01a5cd86fe50d5f3ce993c9642e062cd0b1"
 
 [[files]]
 file = "kubejs/server_scripts/shaped_recipes.js"
@@ -2982,7 +2982,7 @@ hash = "3a6a714390a97d44adf4d2e3e76633ace82a912b5392337d40d064240d0ab507"
 
 [[files]]
 file = "kubejs/startup_scripts/registry.js"
-hash = "f3a48bea6ec7f0277e0e09a43c0da58cdb79375212e7297125c47b0961ec2d91"
+hash = "c702a3a3d53c7a450fef9789494140e346a010a2d18de0cf1082f59fc99dbee3"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
@@ -2997,8 +2997,8 @@ file = "mods/AI-Improvements-1.20-0.5.2.jar"
 hash = "575a4a8e00f982c064d54bb3e73e5cda2d14414de054a471a3daf3f58bdf560a"
 
 [[files]]
-file = "mods/AdvJS-2001forge-2.9.1.jar"
-hash = "7efa1565dedc293873aeb8a1d54ec3866ee0f6662de11119bc27d349c5de3f33"
+file = "mods/AdvJS-2001forge-2.9.2.jar"
+hash = "31a9442ae8943624811352dff74073d82ac9affc9fe7010c3d225b61b5a146f3"
 
 [[files]]
 file = "mods/Apugli-2.9.1+1.20.1-forge.jar"
