@@ -26,6 +26,11 @@ ServerEvents.recipes(e => {
         'aether:skyroot_crafting_table',
         'createbigcannons:compacting/iron_to_cast_iron_ingot',
         /regions_unexplored:stick_from(.*branch|.*beard)/,
+        /aether:skyroot_(tripwire_hook|grindstone|jukebox|zanite_vanilla_shield|iron_vanilla_shield|note_block|smithing_table|fletching_table|barrel|piston|loom|beehive|cartography|chest)/,
+        'farmersdelight:bread_from_smelting',
+        'farmersdelight:bread_from_smoking',
+        /ad_astra:(iron|steel)_rod/,
+        'create:crushing/raw_uranium_ore',
     ]
 
     idRemovals.forEach(removal => {

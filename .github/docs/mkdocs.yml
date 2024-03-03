@@ -8,13 +8,15 @@ nav:
   - 🏠Home: 'index.md'
   - 📋Information & Guides:
     - Installation: 'information_and_guides/installation.md'
-    - Performance: 'information_and_guides/performance.md'
     - Additional Tips: 'information_and_guides/additional_tips.md'
+    - Requests: 'information_and_guides/requests.md'
+    - Performance: 'information_and_guides/performance.md'
     - Modlist: 'information_and_guides/modlist.md'
   - 📜Changelogs:
     - v2.2.0: 'changelogs/v2.2.0.md'
     - v2.2.1: 'changelogs/v2.2.1.md'
     - v2.2.2: 'changelogs/v2.2.2.md'
+    - v2.2.3: 'changelogs/v2.2.3.md'
 markdown_extensions:
   - admonition
   - pymdownx.details

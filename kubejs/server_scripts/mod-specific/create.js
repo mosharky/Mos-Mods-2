@@ -17,6 +17,26 @@ ServerEvents.recipes(e => {
     e.recipes.create.mixing(Fluid.of('createbigcannons:molten_steel', 45), [Fluid.of('embers:molten_iron', 45), 'minecraft:charcoal']).heated().id('kubejs:create/mixing')
     // compacting
     e.recipes.create.compacting('ad_astra:steel_ingot', Fluid.of('createbigcannons:molten_steel', 90)).id('createbigcannons:compacting/forge_steel_ingot')
+    // mechanical crafting
+    e.recipes.create.mechanical_crafting(
+        'create_jetpack:jetpack', [
+            ' ABA ',
+            'ACDCA',
+            'AEFEA',
+            ' G G '
+        ],
+        {
+            A: '#forge:plates/brass',
+            B: 'create:shaft',
+            C: 'create:precision_mechanism',
+            D: 'create:copper_backtank',
+            E: 'ad_astra:steel_tank',
+            F: 'minecraft:elytra',
+            G: 'ad_astra:steel_engine'
+        }
+    ).id('create_jetpack:jetpack')
+
+
     // basin melting
     e.custom({
         type: 'createbigcannons:melting',
@@ -53,6 +73,14 @@ ServerEvents.recipes(e => {
         processingTime: 20,
         results: [Fluid.of('embers:molten_iron', 90).toJson()]
     }).id('kubejs:createbigcannons/melting/molten_iron_from_ore')
+
+
+    // rolling
+    e.custom({
+        type: 'createaddition:rolling',
+        input: Ingredient.of('#forge:ingots/steel').toJson(),
+        result: Item.of('ad_astra:steel_rod', 2).toJson()
+    }).id('kubejs:createaddition/rolling/steel_ingot')
 
     // woodType sawing
     e.remove({ id: /create:cutting.*/ })

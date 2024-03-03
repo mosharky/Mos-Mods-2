@@ -26,5 +26,14 @@
         "sounds": [
             "kubejs:ghostwater_dive_2"
         ]
+    },
+    "music.freddys_death_song": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "kubejs:music.freddys_death_song",
+                "stream": true
+            }
+        ]
     }
 }

@@ -12,7 +12,7 @@ global.fullRemovals = [
     'ad_astra:cheese',
     /rats:(confit_byaldi|upgrade_separator|upgrade_combiner|auto_curdler|block_of_cheese|cheese|nether_cheese|block_of_nether_cheese)/,
     /rats:rat_upgrade_(enchanter|disenchanter|combined|jury_rigged|time_manipulator|tick_accelerator|pickpocket)/,
-    /betterend:(.*hammer|.*thallasium.*|.*terminite.*|.*aeternium.*|.*crystalite.*|.*template.*|.*bulb_lantern.*|end_stone_smelter|ender_ore|elytra_armored|crystalline_sulphur|leather_wrapped_stick|leather_stripe|.*taburet|.*bar_stool|.*chair)/,
+    /betterend:(.*hammer|.*thallasium.*|.*terminite.*|.*aeternium.*|.*crystalite.*|.*template.*|.*bulb_lantern.*|end_stone_smelter|ender_ore|elytra_armored|crystalline_sulphur|leather_wrapped_stick|leather_stripe|.*taburet|.*bar_stool|.*chair|.*barrel|.*crafting_table|.*composter)/,
     /betterend:(andesite|diorite|granite|quartz|purpur|end_stone|blackstone)_lantern/,
     /betternether:cincinnasite_(shovel|axe|pickaxe|hoe|sword|shears|chestplate|boots|helmet|leggings|.*diamond.*)/,
     /betternether:(nether_lapis_ore|.*chair|.*stool|.*taburet|.*ladder|.*ruby.*|obsidian_brick.*|.*crafting_table|.*composter|.*barrel|chest_of_drawers|bone_wall|bone_block|bone_slab|nether_brick_wall)/,
@@ -25,7 +25,6 @@ global.fullRemovals = [
     /embers:(iron|copper)_plate/,
     /hearth_and_home:.*chimney/,
     /decorative_blocks:(thatch|stone_pillar|blockstate_copy_item)/,
-    'create:calcite_pillar',
     // mod-specific/alexscaves
     'alexscaves:diving_helmet',
     'alexscaves:diving_boots',
@@ -46,18 +45,20 @@ global.fullRemovals = [
     /crabbersdelight:(crab_legs|crab_bucket|crab_spawn_egg)/,
     /createbigcannons:(cast_iron_block|cast_iron_nugget|cast_iron_ingot)/,
     /regions_unexplored:.*painted.*/,
-    'aquamirae:oxygen_tank',
     'endersdelight:chorus_crate',
     'createbigcannons:steel_scrap',
     'overweight_farming:melon_juice',
-    'rats:assorted_vegetables',
+    'createaddition:iron_rod',
+    /moreminecarts:(maglev.*|transport_tank|tank_cart|silica_steel_mix|glass_cactus)/,
 ]
 
 
 // list of stuff to replace from peoples inventories
 global.inventoryReplacement = [
-    { toReplace: 'iwannaskate:pizza_slice', replaceWith: 'brewinandchewin:cheese_pizza_slice', msg: false },
+    // disable chat message: { msg: false }
+    { toReplace: 'iwannaskate:pizza_slice', replaceWith: 'brewinandchewin:cheese_pizza_slice' },
     { toReplace: 'hauntedharvest:rotten_apple', replaceWith: 'domesticationinnovation:rotten_apple' },
+    { toReplace: 'rats:assorted_vegetables', replaceWith: 'overweight_farming:vegetable_compost' },
 ]
 
 
@@ -90,7 +91,7 @@ global.ingerland = (item) => {
     let modName = Platform.mods[item.split(':')[0]].name
     let itemName = Item.of(item).getDisplayName().getString().replace('[', '"').replace(']', '"')
 
-    return `${modName}'s ${itemName}`
+    return `${modName}s ${itemName}`
 }
 
 

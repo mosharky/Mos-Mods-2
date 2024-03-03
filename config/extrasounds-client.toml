@@ -27,4 +27,6 @@
 	typing = 0.5
 	#Item drop Sounds
 	item_drop = false
+	#Empty hotbar Sounds
+	empty_hotbar = false
 

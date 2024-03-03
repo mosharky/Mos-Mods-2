@@ -148,7 +148,7 @@ ServerEvents.highPriorityData(e => {
         parent: 'ad_astra:moon',
         criteria: {
             has_moon_cheese: {
-                conditions: { items: [{ items: ['brewinandchewin:flaxen_cheese_wedge'] }] },
+                conditions: { items: [{ items: ['ad_astra:moon_cheese_ore'] }] },
                 trigger: 'minecraft:inventory_changed'
             }
         },

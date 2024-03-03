@@ -11,8 +11,7 @@ ServerEvents.commandRegistry(event => {
             server.runCommandSilent('kubejs reload startup_scripts')
             server.runCommandSilent('kubejs reload server_scripts')
             server.runCommandSilent('kubejs reload client_scripts')
-            // server.runCommandSilent('kubejs reload lang')
-            // server.runCommandSilent('kubejs reload textures')
+            server.runCommandSilent('kubejs reload lang')
             server.runCommand('reload')
             return 1
         })
