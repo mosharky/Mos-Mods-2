@@ -139,6 +139,7 @@ function getDamageSource(/** @type {Internal.Level}*/ level, /** @type {Internal
     const holder = level.registryAccess().registryOrThrow(DAMAGE_TYPE).getHolderOrThrow(resourceKey)
     return new DamageSource(holder)
 }
+let Mth = Java.loadClass('net.minecraft.util.Mth')
 
 StartupEvents.registry('entity_type', e => {
     e.create('xayahs_feather_arrow', 'entityjs:arrow')
@@ -160,7 +161,8 @@ StartupEvents.registry('entity_type', e => {
         })
         // particles spawning on arrow
         .tick(function(/** @type {Internal.Entity} */ entity) {
-            if (entity.isMoving()) {
+            let motion = Mth.lengthSquared(entity.getDeltaMovement().x, entity.getDeltaMovement().y, entity.getDeltaMovement().z) < 0.01;
+            if (motion == false) {
                 entity.getLevel().addParticle('galosphere:amethyst_rain', entity.x, entity.y, entity.z, 0, 0, 0)
                 // entity.server.runCommandSilent('particle galosphere:amethyst_rain ^ ^ ^ 0 0 0 0 1')
                 // // spawn particle 0.5 blocks behind arrow
