@@ -1,4 +1,4 @@
-# Mo's 'Mons SMP
+# Mo's Mods 2 SMP
 A private SMP ran using packwiz. Documentation can be found at https://mosharky.github.io/Mos-Mods-2/
 
 # Developing
